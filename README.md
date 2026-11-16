@@ -50,7 +50,19 @@ En GitHub, los secretos se cargan con `gh secret set OPENAI_API_KEY` y
 
 ## App
 
-Ver `app/README.md` (en construcción).
+Flutter (Android primero; iOS cuando haya Xcode). Tres pestañas: **Torneos** (lista por
+meses con buscador y filtros de provincia y tipo), **Calendario** (vista mensual con puntos
+por tipo) y **Avisos** (provincias para recibir push y novedades de la última revisión).
+Cada torneo tiene ficha con enlace de inscripción, "Añadir a mi calendario" y compartir.
+
+```bash
+cd app
+flutter pub get && flutter analyze && flutter test
+flutter run                        # emulador o móvil
+flutter build apk --release        # build/app/outputs/flutter-apk/app-release.apk
+```
+
+Detalles (Firebase, icono, firma del APK) en `app/README.md`.
 
 ## Esquema de `data/torneos.json`
 
