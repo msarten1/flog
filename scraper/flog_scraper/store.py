@@ -124,16 +124,19 @@ def reconciliar(
     nuevos: list[Torneo],
     anterior: Catalogo | None,
     today: date | None = None,
+    descartados: set[str] | None = None,
 ) -> tuple[Catalogo, Cambios]:
     """Combina la captura de hoy con el catálogo anterior.
 
     - Conserva `id` y `anadido` de los torneos ya conocidos.
     - Marca `cambio` cuando cambia fecha o sede.
     - Mantiene unos días los que desaparecen de su fuente ("Posiblemente cancelado").
+    - Los ids en `descartados` (excluidos hoy por reglas o clasificador) se retiran sin aviso.
     - Elimina los que terminaron hace más de DIAS_RETENCION_PASADOS días.
     """
     today = today or date.today()
     hoy = today.isoformat()
+    descartados = descartados or set()
     anteriores = list(anterior.torneos) if anterior else []
     usados: set[int] = set()
     resultado: list[Torneo] = []
@@ -168,6 +171,8 @@ def reconciliar(
             continue
         if a.fecha_final < hoy:
             continue  # ya se jugó: lo gestiona la purga de abajo
+        if a.id in descartados:
+            continue  # hoy se ha decidido que no es un torneo abierto: fuera sin aviso
         if a.fuente == "legacy":
             # Datos de la etapa anterior sin fuente automatizable: se mantienen hasta su fecha.
             resultado.append(a)

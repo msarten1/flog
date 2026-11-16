@@ -55,7 +55,8 @@ def procesar(
     # Fuera de ventana: solo futuros (o terminados hace poco).
     unicos = deduplicar(incluidos)
     anterior = leer_catalogo(data_dir / "torneos.json")
-    catalogo, cambios = reconciliar(unicos, anterior, today=today)
+    descartados = {t.id for t, _ in excluidos}
+    catalogo, cambios = reconciliar(unicos, anterior, today=today, descartados=descartados)
     return Resultado(catalogo=catalogo, cambios=cambios, excluidos=excluidos, capturados=len(capturados))
 
 

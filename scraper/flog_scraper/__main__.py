@@ -116,11 +116,10 @@ def main(argv: list[str] | None = None) -> int:
     p_not.set_defaults(func=cmd_notify)
 
     args = parser.parse_args(argv)
-    logging.basicConfig(
-        level=logging.DEBUG if args.verbose else logging.INFO,
-        format="%(levelname)s %(name)s: %(message)s",
-        stream=sys.stderr,
-    )
+    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s", stream=sys.stderr)
+    logging.getLogger("flog_scraper").setLevel(logging.DEBUG if args.verbose else logging.INFO)
+    for ruidoso in ("openai", "httpx", "httpx2", "httpcore", "httpcore2", "urllib3"):
+        logging.getLogger(ruidoso).setLevel(logging.WARNING)
     return args.func(args)
 
 

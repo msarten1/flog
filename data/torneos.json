@@ -158,23 +158,6 @@
    "anadido": "2026-11-08"
   },
   {
-   "id": "tornegolf-9092",
-   "fecha": "2026-11-21",
-   "nombre": "Orden Mérito Parejas",
-   "club": "Panorámica Golf",
-   "provincia": "Castellón",
-   "tipo": "Club",
-   "modalidad": "Fourball Stableford",
-   "estado_inscripcion": "abierta",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-castellon-21-noviembre-2026-orden-merito-parejas-panoramica-panoramica-club--9092",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6aa974a8d2cbd360cacb1cbf/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-16",
-   "cambio": "Posiblemente cancelado",
-   "revisar": true,
-   "sin_fuente_desde": "2026-11-16"
-  },
-  {
    "id": "elbosque-audi-center",
    "fecha": "2026-11-21",
    "nombre": "Torneo Audi Center Valencia",

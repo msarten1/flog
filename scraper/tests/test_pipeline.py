@@ -103,3 +103,15 @@ def test_cli_dry_run(tmp_path, capsys):
     assert rc == 0
     out = capsys.readouterr().out
     assert "dry-run" in out and "publicados" in out
+
+
+def test_descartado_por_clasificador_no_se_anuncia_como_cancelado():
+    hoy = date(2026, 11, 16)
+    anterior = Catalogo(
+        actualizado="2026-11-09",
+        primera="2026-11-08",
+        torneos=[_t("tornegolf-1", "2026-11-21", "Orden Mérito Parejas", revisar=True)],
+    )
+    cat, cambios = reconciliar([], anterior, today=hoy, descartados={"tornegolf-1"})
+    assert cat.torneos == []
+    assert cambios.cambios == [] and cambios.eliminados == []

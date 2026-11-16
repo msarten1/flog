@@ -1,17 +1,7 @@
 {
  "fecha": "2026-11-16",
  "nuevos": [],
- "cambios": [
-  {
-   "id": "tornegolf-9092",
-   "fecha": "2026-11-21",
-   "nombre": "Orden Mérito Parejas",
-   "club": "Panorámica Golf",
-   "provincia": "Castellón",
-   "tipo": "Club",
-   "cambio": "Posiblemente cancelado"
-  }
- ],
+ "cambios": [],
  "eliminados": [],
  "proximos_14_dias": [
   {
@@ -77,15 +67,6 @@
    "club": "El Bosque",
    "provincia": "Valencia",
    "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-9092",
-   "fecha": "2026-11-21",
-   "nombre": "Orden Mérito Parejas",
-   "club": "Panorámica Golf",
-   "provincia": "Castellón",
-   "tipo": "Club",
-   "cambio": "Posiblemente cancelado"
   },
   {
    "id": "tornegolf-9869",
@@ -215,15 +196,5 @@
    "cierre": "2026-11-26"
   }
  ],
- "revisar": [
-  {
-   "id": "tornegolf-9092",
-   "fecha": "2026-11-21",
-   "nombre": "Orden Mérito Parejas",
-   "club": "Panorámica Golf",
-   "provincia": "Castellón",
-   "tipo": "Club",
-   "cambio": "Posiblemente cancelado"
-  }
- ]
+ "revisar": []
 }
