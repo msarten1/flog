@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import '../../core/config.dart';
 import '../../core/dates.dart';
 import '../../core/theme.dart';
+import '../../models/catalogo.dart';
 import '../../services/acciones.dart';
 import '../../services/push_service.dart';
 import '../../state/torneos_state.dart';
@@ -46,6 +47,26 @@ class AvisosPage extends StatelessWidget {
                       value: push.provincias.contains(p),
                       onChanged: (v) => push.setProvincia(p, v),
                     ),
+                  const SizedBox(height: 6),
+                  Text('¿Cuándo?', style: text.labelMedium?.copyWith(color: suave)),
+                  const SizedBox(height: 6),
+                  SegmentedButton<bool>(
+                    segments: const [
+                      ButtonSegment(value: false, label: Text('Cada día'), icon: Icon(Icons.bolt_outlined)),
+                      ButtonSegment(value: true, label: Text('Resumen semanal'), icon: Icon(Icons.view_week_outlined)),
+                    ],
+                    selected: {push.semanal},
+                    onSelectionChanged: (s) => push.setSemanal(s.first),
+                    showSelectedIcon: false,
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    push.semanal
+                        ? 'Un resumen cada lunes con lo nuevo de la semana. Además, un aviso si una inscripción cierra en dos días o menos.'
+                        : 'Un aviso el mismo día en que se anuncia un torneo o cambia uno existente, solo los días que haya novedades.',
+                    style: text.labelMedium?.copyWith(color: suave, fontWeight: FontWeight.w500),
+                  ),
+                  const SizedBox(height: 4),
                   if (!push.configurado)
                     Padding(
                       padding: const EdgeInsets.only(bottom: 8),
@@ -82,7 +103,7 @@ class AvisosPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          if (cambios != null) _Novedades(cambios: cambios) else const SizedBox.shrink(),
+          _Novedades(novedades: s.novedades, cambios: cambios),
           const SizedBox(height: 16),
           Card(
             child: Padding(
@@ -132,17 +153,19 @@ class AvisosPage extends StatelessWidget {
 }
 
 class _Novedades extends StatelessWidget {
-  const _Novedades({required this.cambios});
-  final dynamic cambios;
+  const _Novedades({required this.novedades, required this.cambios});
+  final Novedades? novedades;
+  final Cambios? cambios;
 
   @override
   Widget build(BuildContext context) {
     final text = Theme.of(context).textTheme;
     final suave = context.flog.textoSuave;
-    final nuevos = cambios.nuevos as List<Map<String, dynamic>>;
-    final cambiados = cambios.cambios as List<Map<String, dynamic>>;
-    final cierran = cambios.inscripcionesCierran as List<Map<String, dynamic>>;
-    final fecha = Fechas.parse(cambios.fecha as String);
+    final semana = novedades?.ultimos(7);
+    final nuevos = semana?.nuevos ?? cambios?.nuevos ?? const <Map<String, dynamic>>[];
+    final cambiados = semana?.cambios ?? cambios?.cambios ?? const <Map<String, dynamic>>[];
+    final cierran = cambios?.inscripcionesCierran ?? const <Map<String, dynamic>>[];
+    final ultima = cambios?.fecha ?? novedades?.dias.firstOrNull?['fecha'] as String?;
 
     Widget fila(Map<String, dynamic> t, {String? extra}) => InkWell(
           onTap: () => context.push('/torneo/${t['id']}'),
@@ -176,17 +199,19 @@ class _Novedades extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Última revisión · ${Fechas.corta(fecha)}', style: text.titleMedium),
+            Text('Últimos 7 días', style: text.titleMedium),
+            if (ultima != null)
+              Text('Última revisión: ${Fechas.corta(Fechas.parse(ultima))}', style: text.labelMedium?.copyWith(color: suave)),
             const SizedBox(height: 8),
-            if (nuevos.isEmpty && cambiados.isEmpty)
-              Text('Sin torneos nuevos ni cambios.', style: text.bodyMedium?.copyWith(color: suave)),
+            if (nuevos.isEmpty && cambiados.isEmpty && cierran.isEmpty)
+              Text('Sin torneos nuevos ni cambios esta semana.', style: text.bodyMedium?.copyWith(color: suave)),
             if (nuevos.isNotEmpty) ...[
-              Text('Nuevos', style: text.labelMedium?.copyWith(color: suave)),
+              Text('Nuevos (${nuevos.length})', style: text.labelMedium?.copyWith(color: suave)),
               for (final t in nuevos) fila(t),
             ],
             if (cambiados.isNotEmpty) ...[
               const SizedBox(height: 6),
-              Text('Cambios', style: text.labelMedium?.copyWith(color: suave)),
+              Text('Cambios (${cambiados.length})', style: text.labelMedium?.copyWith(color: suave)),
               for (final t in cambiados) fila(t, extra: t['cambio'] as String?),
             ],
             if (cierran.isNotEmpty) ...[

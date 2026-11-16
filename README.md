@@ -6,6 +6,7 @@ Los datos los mantiene un scraper propio que se ejecuta cada mañana en GitHub A
 
 ```
 data/        torneos.json (lo que consume la app) · changes.json (novedades de la última ejecución)
+             novedades.json (historial de 14 días: resumen semanal en la app y por push)
              clasificaciones.json (decisiones del clasificador; editable a mano)
 scraper/     paquete Python flog_scraper (fuentes, reglas, clasificador, dedupe, push)
 app/         proyecto Flutter
@@ -44,6 +45,11 @@ Variables de entorno:
 - `OPENAI_API_KEY`: clasificador de torneos dudosos (sin ella se marcan `revisar: true`).
 - `FCM_SERVICE_ACCOUNT_JSON` o `FCM_SERVICE_ACCOUNT_FILE`: cuenta de servicio de Firebase para las notificaciones.
 - `FLOG_REQUEST_DELAY`: pausa entre peticiones (1 s por defecto).
+
+Avisos push: cada día se notifica a los temas `prov-<provincia>` (nuevos y cambios del día);
+los lunes se envía un resumen de 7 días a `prov-<provincia>-semanal`; y a ambos, una sola vez
+por torneo, cuando una inscripción cierra en dos días o menos. En la app cada persona elige
+"Cada día" o "Resumen semanal" en la pestaña Avisos. `notify --semanal` fuerza el resumen.
 
 En GitHub, los secretos se cargan con `gh secret set OPENAI_API_KEY` y
 `gh secret set FCM_SERVICE_ACCOUNT_JSON < service-account.json`.

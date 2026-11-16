@@ -20,6 +20,10 @@ FCM_TOPICS = {
     "Castellón": "prov-castellon",
 }
 FCM_TOPIC_GLOBAL = "todos"
+# Variante "resumen semanal": mismo tema con sufijo. Se envía los lunes.
+FCM_SUFIJO_SEMANAL = "-semanal"
+# Aviso de cierre de inscripción cuando quedan estos días o menos.
+DIAS_AVISO_CIERRE = 2
 
 # Torneos terminados hace más de estos días se eliminan del calendario.
 DIAS_RETENCION_PASADOS = 14

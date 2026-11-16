@@ -82,3 +82,33 @@ class Cambios {
     );
   }
 }
+
+/// El fichero `novedades.json`: historial de los últimos días.
+class Novedades {
+  const Novedades({required this.dias});
+
+  /// [{fecha, nuevos, cambios, eliminados}], más reciente primero.
+  final List<Map<String, dynamic>> dias;
+
+  factory Novedades.fromJson(Map<String, dynamic> j) =>
+      Novedades(dias: ((j['dias'] as List?) ?? const []).cast<Map<String, dynamic>>());
+
+  /// Nuevos y cambios de los últimos [dias] días, sin repetir ids.
+  ({List<Map<String, dynamic>> nuevos, List<Map<String, dynamic>> cambios}) ultimos(int dias) {
+    final desde = Fechas.iso(Fechas.hoy().subtract(Duration(days: dias)));
+    final nuevos = <String, Map<String, dynamic>>{};
+    final cambios = <String, Map<String, dynamic>>{};
+    final ordenados = [...this.dias]..sort((a, b) => (a['fecha'] as String).compareTo(b['fecha'] as String));
+    for (final d in ordenados) {
+      if ((d['fecha'] as String).compareTo(desde) < 0) continue;
+      for (final t in ((d['nuevos'] as List?) ?? const []).cast<Map<String, dynamic>>()) {
+        nuevos[t['id'] as String] = t;
+      }
+      for (final t in ((d['cambios'] as List?) ?? const []).cast<Map<String, dynamic>>()) {
+        if (!nuevos.containsKey(t['id'])) cambios[t['id'] as String] = t;
+      }
+    }
+    int porFecha(Map<String, dynamic> a, Map<String, dynamic> b) => (a['fecha'] as String).compareTo(b['fecha'] as String);
+    return (nuevos: nuevos.values.toList()..sort(porFecha), cambios: cambios.values.toList()..sort(porFecha));
+  }
+}

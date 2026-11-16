@@ -28,6 +28,7 @@ class TorneosRepository {
   final http.Client _client;
   static const _kEtag = 'torneos_etag';
   static const _kCambiosEtag = 'cambios_etag';
+  static const _kNovedadesEtag = 'novedades_etag';
 
   Future<File> _archivo(String nombre) async {
     final dir = await getApplicationSupportDirectory();
@@ -100,6 +101,36 @@ class TorneosRepository {
       debugPrint('changes.json no disponible: $e');
       return leerCambiosLocal();
     }
+  }
+
+  Future<Novedades?> descargarNovedades() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final etag = prefs.getString(_kNovedadesEtag);
+      final r = await _client
+          .get(Uri.parse(FlogConfig.novedadesUrl), headers: {'If-None-Match': ?etag})
+          .timeout(const Duration(seconds: 20));
+      if (r.statusCode != 200) return await leerNovedadesLocal();
+      final body = utf8.decode(r.bodyBytes);
+      final f = await _archivo('novedades.json');
+      await f.writeAsString(body, flush: true);
+      final nuevoEtag = r.headers['etag'];
+      if (nuevoEtag != null) await prefs.setString(_kNovedadesEtag, nuevoEtag);
+      return Novedades.fromJson(jsonDecode(body) as Map<String, dynamic>);
+    } catch (e) {
+      debugPrint('novedades.json no disponible: $e');
+      return leerNovedadesLocal();
+    }
+  }
+
+  Future<Novedades?> leerNovedadesLocal() async {
+    try {
+      final f = await _archivo('novedades.json');
+      if (await f.exists()) {
+        return Novedades.fromJson(jsonDecode(await f.readAsString()) as Map<String, dynamic>);
+      }
+    } catch (_) {}
+    return null;
   }
 
   Future<Cambios?> leerCambiosLocal() async {

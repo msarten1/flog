@@ -11,6 +11,8 @@ class FlogConfig {
       'https://raw.githubusercontent.com/$repo/main/data/torneos.json';
   static const String cambiosUrl =
       'https://raw.githubusercontent.com/$repo/main/data/changes.json';
+  static const String novedadesUrl =
+      'https://raw.githubusercontent.com/$repo/main/data/novedades.json';
 
   static const List<String> provincias = ['Alicante', 'Valencia', 'Castellón'];
 
@@ -21,6 +23,9 @@ class FlogConfig {
     'Castellón': 'prov-castellon',
   };
   static const String topicGlobal = 'todos';
+
+  /// Sufijo de los temas para quien prefiere un resumen semanal (lunes).
+  static const String sufijoSemanal = '-semanal';
 
   static const String canalNotificaciones = 'flog_torneos';
 }

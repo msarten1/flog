@@ -15,6 +15,7 @@ class TorneosState extends ChangeNotifier {
 
   Catalogo? _catalogo;
   Cambios? _cambios;
+  Novedades? _novedades;
   OrigenDatos _origen = OrigenDatos.semilla;
   bool _cargando = false;
   bool _sinConexion = false;
@@ -28,6 +29,7 @@ class TorneosState extends ChangeNotifier {
 
   Catalogo? get catalogo => _catalogo;
   Cambios? get cambios => _cambios;
+  Novedades? get novedades => _novedades;
   OrigenDatos get origen => _origen;
   bool get cargando => _cargando;
   bool get sinConexion => _sinConexion;
@@ -67,12 +69,14 @@ class TorneosState extends ChangeNotifier {
       }
       _sinConexion = false;
       _cambios = await _repo.descargarCambios() ?? _cambios;
+      _novedades = await _repo.descargarNovedades() ?? _novedades;
     } catch (e) {
       // Un error HTTP (p. ej. 404) no es falta de conexión: se usa la copia local sin avisar.
       _sinConexion = e is! HttpException;
       _error = e.toString();
       debugPrint('refrescar: $e');
       _cambios ??= await _repo.leerCambiosLocal();
+      _novedades ??= await _repo.leerNovedadesLocal();
     } finally {
       _cargando = false;
       notifyListeners();

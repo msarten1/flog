@@ -67,8 +67,7 @@
    "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-17-noviembre-2026-9-tapas-las-colinas-golf-country-club--9064",
    "enlace_inscripcion": "https://www.golfdirecto.com/game/698b1d6a74e61b41732ca798/summary",
    "fuente": "tornegolf",
-   "anadido": "2026-11-16",
-   "revisar": true
+   "anadido": "2026-11-16"
   },
   {
    "id": "fgcv-liguilla-femenina-10",
@@ -157,21 +156,6 @@
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6ac9e9eb7268198aae0c3f62/summary",
    "fuente": "tornegolf",
    "anadido": "2026-11-08"
-  },
-  {
-   "id": "tornegolf-9092",
-   "fecha": "2026-11-21",
-   "nombre": "Orden Mérito Parejas",
-   "club": "Panorámica Golf",
-   "provincia": "Castellón",
-   "tipo": "Club",
-   "modalidad": "Fourball Stableford",
-   "estado_inscripcion": "abierta",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-castellon-21-noviembre-2026-orden-merito-parejas-panoramica-panoramica-club--9092",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6aa974a8d2cbd360cacb1cbf/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-16",
-   "revisar": true
   },
   {
    "id": "elbosque-audi-center",
@@ -272,8 +256,7 @@
    "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-28-noviembre-2026-v-my-lawyer-in-spain-la-marquesa--9492",
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6adf0390b0e08ac0156a8cc8/summary",
    "fuente": "tornegolf",
-   "anadido": "2026-11-08",
-   "revisar": true
+   "anadido": "2026-11-08"
   },
   {
    "id": "circuito-mediterraneo-28nov",
@@ -509,8 +492,7 @@
    "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-09-diciembre-2026-matchplay-interclubes-aesgolf-oliva-nova-oliva-nova--9777",
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6aed923aec94b7c14e95eca5/summary",
    "fuente": "tornegolf",
-   "anadido": "2026-11-16",
-   "revisar": true
+   "anadido": "2026-11-16"
   },
   {
    "id": "tornegolf-9992",
@@ -565,8 +547,7 @@
    "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-13-diciembre-2026-viii-damas-marfil-heritage-el-bosque-el-bosque--10017",
    "enlace_inscripcion": "https://www.golfdirecto.com/game/68f876d4d4916519150ea585/summary",
    "fuente": "tornegolf",
-   "anadido": "2026-11-16",
-   "revisar": true
+   "anadido": "2026-11-16"
   },
   {
    "id": "fgcv-final-liguilla-senior",

@@ -19,6 +19,7 @@ Future<void> flogBackgroundHandler(RemoteMessage message) async {
 class PushService extends ChangeNotifier {
   static const _kProvincias = 'push_provincias';
   static const _kPreguntado = 'push_preguntado';
+  static const _kSemanal = 'push_semanal';
 
   final _local = FlutterLocalNotificationsPlugin();
   final _abrir = StreamController<String?>.broadcast();
@@ -27,6 +28,7 @@ class PushService extends ChangeNotifier {
   bool _permiso = false;
   bool _preguntado = false;
   Set<String> _provincias = {};
+  bool _semanal = false;
   String? _token;
   String? _errorConfig;
 
@@ -35,6 +37,9 @@ class PushService extends ChangeNotifier {
   bool get permiso => _permiso;
   bool get preguntado => _preguntado;
   Set<String> get provincias => Set.unmodifiable(_provincias);
+
+  /// true = resumen los lunes; false = aviso el mismo día.
+  bool get semanal => _semanal;
   String? get token => _token;
   String? get errorConfig => _errorConfig;
 
@@ -45,6 +50,7 @@ class PushService extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     _provincias = (prefs.getStringList(_kProvincias) ?? const []).toSet();
     _preguntado = prefs.getBool(_kPreguntado) ?? false;
+    _semanal = prefs.getBool(_kSemanal) ?? false;
 
     await _initLocal();
 
@@ -82,11 +88,7 @@ class PushService extends ChangeNotifier {
     }
 
     // Reaplica las suscripciones guardadas (es idempotente).
-    for (final p in _provincias) {
-      final topic = FlogConfig.topics[p];
-      if (topic != null) unawaited(fm.subscribeToTopic(topic));
-    }
-    if (_provincias.isNotEmpty) unawaited(fm.subscribeToTopic(FlogConfig.topicGlobal));
+    unawaited(_sincronizarTemas());
     notifyListeners();
   }
 
@@ -153,9 +155,35 @@ class PushService extends ChangeNotifier {
     return _permiso;
   }
 
+  String _tema(String base) => _semanal ? '$base${FlogConfig.sufijoSemanal}' : base;
+
+  /// Deja suscritos exactamente los temas que tocan (provincias elegidas y frecuencia)
+  /// y da de baja la variante contraria.
+  Future<void> _sincronizarTemas() async {
+    if (!_configurado) return;
+    final fm = FirebaseMessaging.instance;
+    final bases = [for (final p in _provincias) FlogConfig.topics[p]!, if (_provincias.isNotEmpty) FlogConfig.topicGlobal];
+    final todas = [...FlogConfig.topics.values, FlogConfig.topicGlobal];
+    try {
+      for (final base in todas) {
+        final diario = base;
+        final semanal = '$base${FlogConfig.sufijoSemanal}';
+        final activo = bases.contains(base) ? _tema(base) : null;
+        for (final t in [diario, semanal]) {
+          if (t == activo) {
+            await fm.subscribeToTopic(t);
+          } else {
+            await fm.unsubscribeFromTopic(t);
+          }
+        }
+      }
+    } catch (e) {
+      debugPrint('sincronizar temas: $e');
+    }
+  }
+
   Future<void> setProvincia(String provincia, bool activa) async {
-    final topic = FlogConfig.topics[provincia];
-    if (topic == null) return;
+    if (!FlogConfig.topics.containsKey(provincia)) return;
     if (activa && !_permiso) {
       await pedirPermiso();
     }
@@ -167,20 +195,16 @@ class PushService extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setStringList(_kProvincias, _provincias.toList()..sort());
     notifyListeners();
+    await _sincronizarTemas();
+  }
 
-    if (!_configurado) return;
-    final fm = FirebaseMessaging.instance;
-    try {
-      if (activa) {
-        await fm.subscribeToTopic(topic);
-        await fm.subscribeToTopic(FlogConfig.topicGlobal);
-      } else {
-        await fm.unsubscribeFromTopic(topic);
-        if (_provincias.isEmpty) await fm.unsubscribeFromTopic(FlogConfig.topicGlobal);
-      }
-    } catch (e) {
-      debugPrint('topic $topic: $e');
-    }
+  Future<void> setSemanal(bool semanal) async {
+    if (_semanal == semanal) return;
+    _semanal = semanal;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_kSemanal, semanal);
+    notifyListeners();
+    await _sincronizarTemas();
   }
 
   /// Notificación local de prueba.

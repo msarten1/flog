@@ -90,7 +90,8 @@ def cmd_notify(args: argparse.Namespace) -> int:
         print("No hay changes.json; ejecuta primero `run`.")
         return 1
     cambios = Cambios(**json.loads(path.read_text(encoding="utf-8")))
-    n = fcm.notificar(cambios, dry_run=args.dry_run)
+    semanal = True if args.semanal else None
+    n = fcm.notificar(cambios, dry_run=args.dry_run, data_dir=Path(args.data), semanal=semanal)
     print(f"Notificaciones enviadas: {n}")
     return 0
 
@@ -113,6 +114,7 @@ def main(argv: list[str] | None = None) -> int:
     p_not.add_argument("--dry-run", action="store_true")
     p_not.add_argument("--test", action="store_true", help="envía una notificación de prueba")
     p_not.add_argument("--topic")
+    p_not.add_argument("--semanal", action="store_true", help="forzar el resumen semanal aunque no sea lunes")
     p_not.set_defaults(func=cmd_notify)
 
     args = parser.parse_args(argv)

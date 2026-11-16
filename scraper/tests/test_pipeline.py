@@ -7,7 +7,9 @@ from pathlib import Path
 from flog_scraper.__main__ import FixtureFetcher, main
 from flog_scraper.model import Torneo
 from flog_scraper.pipeline import guardar, procesar, recolectar
-from flog_scraper.store import Catalogo, reconciliar
+from flog_scraper.fcm import mensajes_cierre, mensajes_semanales
+from flog_scraper.novedades import Novedades
+from flog_scraper.store import Cambios, Catalogo, reconciliar
 
 from conftest import FIXTURES, HOY
 
@@ -115,3 +117,39 @@ def test_descartado_por_clasificador_no_se_anuncia_como_cancelado():
     cat, cambios = reconciliar([], anterior, today=hoy, descartados={"tornegolf-1"})
     assert cat.torneos == []
     assert cambios.cambios == [] and cambios.eliminados == []
+
+
+def _r(id: str, fecha: str, nombre: str, provincia: str = "Alicante", **kw) -> dict:
+    return {"id": id, "fecha": fecha, "nombre": nombre, "club": "Club", "provincia": provincia, "tipo": "Club", **kw}
+
+
+def test_novedades_acumula_y_resume_semana():
+    n = Novedades()
+    n.registrar(Cambios(fecha="2026-11-10", nuevos=[_r("a", "2026-12-01", "A")]), today=date(2026, 11, 10))
+    n.registrar(Cambios(fecha="2026-11-12", nuevos=[_r("b", "2026-12-02", "B", provincia="Valencia")], cambios=[_r("a", "2026-12-03", "A", cambio="Cambio de fecha")]), today=date(2026, 11, 12))
+    n.registrar(Cambios(fecha="2026-11-16", cambios=[_r("c", "2026-12-05", "C", cambio="Posiblemente cancelado")]), today=date(2026, 11, 16))
+    assert [d["fecha"] for d in n.dias] == ["2026-11-16", "2026-11-12", "2026-11-10"]
+    nuevos, cambios = n.ultimos(7, date(2026, 11, 16))
+    assert [t["id"] for t in nuevos] == ["a", "b"]  # 'a' es nuevo y su cambio posterior no se repite
+    assert [t["id"] for t in cambios] == ["c"]
+    msgs = mensajes_semanales(n, date(2026, 11, 16))
+    topics = [m[0] for m in msgs]
+    assert topics == ["prov-alicante-semanal", "prov-valencia-semanal", "todos-semanal"]
+    assert "esta semana" in msgs[0][1]
+
+
+def test_aviso_de_cierre_una_sola_vez():
+    hoy = date(2026, 11, 16)
+    cambios = Cambios(
+        fecha="2026-11-16",
+        inscripciones_cierran=[
+            _r("x", "2026-11-27", "Cto Absoluto", cierre="2026-11-17"),
+            _r("y", "2026-11-30", "Lejano", cierre="2026-11-25"),
+        ],
+    )
+    n = Novedades()
+    msgs = mensajes_cierre(cambios, n, hoy)
+    assert [m[0] for m in msgs] == ["prov-alicante", "prov-alicante-semanal"]
+    assert "cierra inscripción el 17 nov" in msgs[0][1]
+    assert n.avisos_cierre == ["x"]
+    assert mensajes_cierre(cambios, n, hoy) == []  # no se repite

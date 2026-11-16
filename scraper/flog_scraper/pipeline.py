@@ -11,6 +11,7 @@ from . import config
 from .classify import clasificar_dudosos
 from .dedupe import deduplicar
 from .model import Torneo, titulo_bonito
+from .novedades import Novedades
 from .rules import aplicar_reglas
 from .sources import ALL_SOURCES
 from .store import Cambios, Catalogo, escribir_json, leer_catalogo, reconciliar
@@ -63,6 +64,9 @@ def procesar(
 def guardar(resultado: Resultado, data_dir: Path) -> None:
     escribir_json(data_dir / "torneos.json", resultado.catalogo.to_json())
     escribir_json(data_dir / "changes.json", resultado.cambios.to_json())
+    novedades = Novedades.leer(data_dir / "novedades.json")
+    novedades.registrar(resultado.cambios)
+    escribir_json(data_dir / "novedades.json", novedades.to_json())
     log.info(
         "guardado: %d torneos en %s (%s)",
         len(resultado.catalogo.torneos),
