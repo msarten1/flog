@@ -1,0 +1,15 @@
+{
+  "name": "Golf CV · Calendario de torneos amateur",
+  "short_name": "Golf CV",
+  "description": "Calendario actualizado de torneos de golf amateur de la Comunitat Valenciana.",
+  "lang": "es",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5f0",
+  "theme_color": "#1f5b3a",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
