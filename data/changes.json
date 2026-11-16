@@ -1,0 +1,362 @@
+{
+ "fecha": "2026-11-16",
+ "nuevos": [
+  {
+   "id": "golfcv-2706",
+   "fecha": "2026-12-20",
+   "nombre": "Circuito Masculino y Femenino CV 4/4",
+   "club": "El Saler",
+   "provincia": "Valencia",
+   "tipo": "Federación"
+  },
+  {
+   "id": "tornegolf-9064",
+   "fecha": "2026-11-17",
+   "nombre": "9 & Tapas",
+   "club": "Las Colinas Golf & Country Club",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10037",
+   "fecha": "2026-11-19",
+   "nombre": "Final XIV Circuito por Equipos AESGOLF C.V.",
+   "club": "El Plantío",
+   "provincia": "Alicante",
+   "tipo": "Circuito"
+  },
+  {
+   "id": "tornegolf-9092",
+   "fecha": "2026-11-21",
+   "nombre": "Orden Mérito Parejas",
+   "club": "Panorámica Golf",
+   "provincia": "Castellón",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9869",
+   "fecha": "2026-11-22",
+   "nombre": "4º- MAJOR (FUSION 2x1 Circuito BCG y MVGT) PONIENTE (Parejas e Individual)",
+   "club": "Meliá Villaitana Golf",
+   "provincia": "Alicante",
+   "tipo": "Circuito"
+  },
+  {
+   "id": "tornegolf-9987",
+   "fecha": "2026-11-28",
+   "nombre": "Copa de Otoño 2026",
+   "club": "Altea Club de Golf",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9728",
+   "fecha": "2026-12-05",
+   "nombre": "Torneo OM Individual",
+   "club": "Panorámica Golf",
+   "provincia": "Castellón",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9740",
+   "fecha": "2026-12-06",
+   "nombre": "Las Colinas Trophy - V Edición",
+   "club": "Las Colinas Golf & Country Club",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9777",
+   "fecha": "2026-12-09",
+   "nombre": "Matchplay Interclubes AESGOLF Damas de la C. Valenciana",
+   "club": "Oliva Nova",
+   "provincia": "Valencia",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9992",
+   "fecha": "2026-12-12",
+   "nombre": "PRO-AM - 125 Aniversario CAMARA ORIHUELA - XIII Memorial Benéfico ANTONIO PEDRERA SOLER",
+   "club": "Villamartín",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10009",
+   "fecha": "2026-12-12",
+   "nombre": "Torneo Noveles",
+   "club": "El Bosque",
+   "provincia": "Valencia",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10017",
+   "fecha": "2026-12-13",
+   "nombre": "VIII Damas Marfil Heritage",
+   "club": "El Bosque",
+   "provincia": "Valencia",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-8879",
+   "fecha": "2027-05-05",
+   "nombre": "Campeonato de España Dobles Senior Masculino 2027",
+   "club": "Mediterráneo Golf",
+   "provincia": "Castellón",
+   "tipo": "Nacional en la CV"
+  },
+  {
+   "id": "tornegolf-8880",
+   "fecha": "2027-05-07",
+   "nombre": "Campeonato de España Individual Senior Masculino 2027",
+   "club": "Mediterráneo Golf",
+   "provincia": "Castellón",
+   "tipo": "Nacional en la CV"
+  }
+ ],
+ "cambios": [],
+ "eliminados": [],
+ "proximos_14_dias": [
+  {
+   "id": "fgcv-liguilla-femenina-10",
+   "fecha": "2026-11-17",
+   "nombre": "IV Liguilla Interclubs Femenina 9/9",
+   "club": "Mediterráneo Golf",
+   "provincia": "Castellón",
+   "tipo": "Federación"
+  },
+  {
+   "id": "tornegolf-9064",
+   "fecha": "2026-11-17",
+   "nombre": "9 & Tapas",
+   "club": "Las Colinas Golf & Country Club",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10037",
+   "fecha": "2026-11-19",
+   "nombre": "Final XIV Circuito por Equipos AESGOLF C.V.",
+   "club": "El Plantío",
+   "provincia": "Alicante",
+   "tipo": "Circuito"
+  },
+  {
+   "id": "msc-cruceros-manises",
+   "fecha": "2026-11-20",
+   "nombre": "Torneo Golf y Viajes MSC Cruceros",
+   "club": "RCG Manises",
+   "provincia": "Valencia",
+   "tipo": "Club"
+  },
+  {
+   "id": "fgcv-copa-levante-final",
+   "fecha": "2026-11-21",
+   "nombre": "Copa Levante - Memorial Fco. Gil (final)",
+   "club": "Meliá Villaitana Golf",
+   "provincia": "Alicante",
+   "tipo": "Federación"
+  },
+  {
+   "id": "bonalba-mutxamel-v",
+   "fecha": "2026-11-21",
+   "nombre": "V Torneo de Golf Mutxamel",
+   "club": "Bonalba",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "ege-otono-ii",
+   "fecha": "2026-11-21",
+   "nombre": "II Torneo de Otoño EGE",
+   "club": "Escuela de Golf de Elche",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "elbosque-audi-center",
+   "fecha": "2026-11-21",
+   "nombre": "Torneo Audi Center Valencia",
+   "club": "El Bosque",
+   "provincia": "Valencia",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9092",
+   "fecha": "2026-11-21",
+   "nombre": "Orden Mérito Parejas",
+   "club": "Panorámica Golf",
+   "provincia": "Castellón",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9869",
+   "fecha": "2026-11-22",
+   "nombre": "4º- MAJOR (FUSION 2x1 Circuito BCG y MVGT) PONIENTE (Parejas e Individual)",
+   "club": "Meliá Villaitana Golf",
+   "provincia": "Alicante",
+   "tipo": "Circuito"
+  },
+  {
+   "id": "fgcv-cto-absoluto-cv",
+   "fecha": "2026-11-27",
+   "nombre": "Cto Absoluto de la CV",
+   "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Federación"
+  },
+  {
+   "id": "fgcv-clubes-sin-campo",
+   "fecha": "2026-11-28",
+   "nombre": "Campeonato Clubes Sin Campo CV",
+   "club": "Meliá Villaitana Golf",
+   "provincia": "Alicante",
+   "tipo": "Federación"
+  },
+  {
+   "id": "circuito-mediterraneo-28nov",
+   "fecha": "2026-11-28",
+   "nombre": "Circuito Mediterraneo Golf",
+   "club": "Mediterráneo Golf",
+   "provincia": "Castellón",
+   "tipo": "Circuito"
+  },
+  {
+   "id": "tornegolf-9987",
+   "fecha": "2026-11-28",
+   "nombre": "Copa de Otoño 2026",
+   "club": "Altea Club de Golf",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "locos-golf-galiana",
+   "fecha": "2026-11-28",
+   "nombre": "Circuito Locos por el Golf",
+   "club": "La Galiana Golf",
+   "provincia": "Valencia",
+   "tipo": "Circuito"
+  },
+  {
+   "id": "manises-virgen-loreto",
+   "fecha": "2026-11-28",
+   "nombre": "Torneo Virgen del Loreto",
+   "club": "RCG Manises",
+   "provincia": "Valencia",
+   "tipo": "Club"
+  },
+  {
+   "id": "lamarquesa-my-lawyer-v",
+   "fecha": "2026-11-28",
+   "nombre": "V My Lawyer in Spain",
+   "club": "La Marquesa",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "lasella-aniversario-xxxvi",
+   "fecha": "2026-11-28",
+   "nombre": "Torneo XXXVI Aniversario La Sella Golf",
+   "club": "La Sella Golf",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "bonalba-texas-scramble",
+   "fecha": "2026-11-29",
+   "nombre": "Texas Scramble Champion Of Champions -105840",
+   "club": "Bonalba",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  }
+ ],
+ "inscripciones_cierran": [
+  {
+   "id": "fgcv-copa-levante-final",
+   "fecha": "2026-11-21",
+   "nombre": "Copa Levante - Memorial Fco. Gil (final)",
+   "club": "Meliá Villaitana Golf",
+   "provincia": "Alicante",
+   "tipo": "Federación",
+   "cierre": "2026-11-16"
+  },
+  {
+   "id": "fgcv-cto-absoluto-cv",
+   "fecha": "2026-11-27",
+   "nombre": "Cto Absoluto de la CV",
+   "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Federación",
+   "cierre": "2026-11-23"
+  },
+  {
+   "id": "fgcv-clubes-sin-campo",
+   "fecha": "2026-11-28",
+   "nombre": "Campeonato Clubes Sin Campo CV",
+   "club": "Meliá Villaitana Golf",
+   "provincia": "Alicante",
+   "tipo": "Federación",
+   "cierre": "2026-11-23"
+  },
+  {
+   "id": "fgcv-liguilla-senior-vlccs-9",
+   "fecha": "2026-12-01",
+   "nombre": "Liguilla Senior Masculina Zona VLC/CS 1DIV 2DIV 9/9",
+   "club": "El Bosque",
+   "provincia": "Valencia",
+   "tipo": "Federación",
+   "cierre": "2026-11-26"
+  },
+  {
+   "id": "fgcv-liguilla-interclubs-fem-4",
+   "fecha": "2026-12-02",
+   "nombre": "Rec IV Liguilla Interclubs Femenina 4/9",
+   "club": "Meliá Villaitana Golf",
+   "provincia": "Alicante",
+   "tipo": "Federación",
+   "cierre": "2026-11-26"
+  }
+ ],
+ "revisar": [
+  {
+   "id": "tornegolf-9064",
+   "fecha": "2026-11-17",
+   "nombre": "9 & Tapas",
+   "club": "Las Colinas Golf & Country Club",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9092",
+   "fecha": "2026-11-21",
+   "nombre": "Orden Mérito Parejas",
+   "club": "Panorámica Golf",
+   "provincia": "Castellón",
+   "tipo": "Club"
+  },
+  {
+   "id": "lamarquesa-my-lawyer-v",
+   "fecha": "2026-11-28",
+   "nombre": "V My Lawyer in Spain",
+   "club": "La Marquesa",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9777",
+   "fecha": "2026-12-09",
+   "nombre": "Matchplay Interclubes AESGOLF Damas de la C. Valenciana",
+   "club": "Oliva Nova",
+   "provincia": "Valencia",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10017",
+   "fecha": "2026-12-13",
+   "nombre": "VIII Damas Marfil Heritage",
+   "club": "El Bosque",
+   "provincia": "Valencia",
+   "tipo": "Club"
+  }
+ ]
+}
