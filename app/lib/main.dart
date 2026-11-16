@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'app.dart';
 import 'services/push_service.dart';
 import 'services/torneos_repository.dart';
+import 'state/perfil_state.dart';
 import 'state/torneos_state.dart';
 
 Future<void> main() async {
@@ -17,12 +18,15 @@ Future<void> main() async {
 
   final push = PushService();
   final state = TorneosState(TorneosRepository());
+  final perfil = PerfilState();
+  perfil.addListener(() => state.setInscritos(perfil.inscritos));
 
   runApp(
     MultiProvider(
       providers: [
         ChangeNotifierProvider<TorneosState>.value(value: state),
         ChangeNotifierProvider<PushService>.value(value: push),
+        ChangeNotifierProvider<PerfilState>.value(value: perfil),
       ],
       child: const FlogApp(),
     ),
@@ -31,4 +35,5 @@ Future<void> main() async {
   // Sin bloquear el primer frame.
   state.iniciar();
   push.init();
+  perfil.cargar();
 }

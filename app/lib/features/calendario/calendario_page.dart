@@ -5,6 +5,7 @@ import 'package:table_calendar/table_calendar.dart';
 import '../../core/dates.dart';
 import '../../core/theme.dart';
 import '../../models/torneo.dart';
+import '../../state/perfil_state.dart';
 import '../../state/torneos_state.dart';
 import '../../widgets/comunes.dart';
 import '../torneos/torneos_page.dart';
@@ -23,6 +24,7 @@ class _CalendarioPageState extends State<CalendarioPage> {
   @override
   Widget build(BuildContext context) {
     final s = context.watch<TorneosState>();
+    final perfil = context.watch<PerfilState>();
     final hoy = Fechas.hoy();
     final sel = _seleccion;
     final delDia = sel == null ? const <Torneo>[] : s.todosDelDia(sel);
@@ -84,13 +86,34 @@ class _CalendarioPageState extends State<CalendarioPage> {
                 markerSize: 6,
               ),
               calendarBuilders: CalendarBuilders<Torneo>(
+                // Día con un torneo en el que estoy inscrito: anillo lima.
+                defaultBuilder: (context, day, focused) {
+                  if (!s.todosDelDia(day).any((t) => perfil.estaInscrito(t.id))) return null;
+                  return Center(
+                    child: Container(
+                      width: 36,
+                      height: 36,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: FlogColors.lima.withValues(alpha: context.esOscuro ? 0.25 : 0.55),
+                        border: Border.all(color: FlogColors.verde500, width: 2),
+                      ),
+                      alignment: Alignment.center,
+                      child: Text('${day.day}', style: text.bodyMedium!.copyWith(fontWeight: FontWeight.w700, color: FlogColors.verde900)),
+                    ),
+                  );
+                },
                 markerBuilder: (context, day, events) {
                   if (events.isEmpty) return null;
+                  final inscrito = events.any((t) => perfil.estaInscrito(t.id));
                   return Positioned(
                     bottom: 4,
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
+                        if (inscrito)
+                          const Icon(Icons.check, size: 10, color: FlogColors.verde900)
+                        else
                         for (final e in events.take(3))
                           Container(
                             width: 6,
@@ -114,13 +137,13 @@ class _CalendarioPageState extends State<CalendarioPage> {
             if (delDia.isEmpty)
               const EstadoVacio(titulo: 'Sin torneos ese día', icono: Icons.event_busy_outlined)
             else
-              ListaTorneos(torneos: delDia),
+              Card(margin: const EdgeInsets.symmetric(horizontal: 16), child: ListaTorneos(torneos: delDia, mostrarFecha: false)),
           ] else ...[
             TituloSeccion('Torneos de ${Fechas.mesAnio(_foco).toLowerCase()}'),
             if (delMes.isEmpty)
               const EstadoVacio(titulo: 'Sin torneos este mes', texto: 'Toca un día o cambia de mes.', icono: Icons.event_busy_outlined)
             else
-              ListaTorneos(torneos: delMes),
+              Card(margin: const EdgeInsets.symmetric(horizontal: 16), child: ListaTorneos(torneos: delMes)),
           ],
         ],
       ),
@@ -145,7 +168,24 @@ class _Leyenda extends StatelessWidget {
       child: Wrap(
         spacing: 14,
         runSpacing: 4,
-        children: [punto('Federación'), punto('Club'), punto('Circuito'), punto('Nacional en la CV')],
+        children: [
+          punto('Federación'),
+          punto('Club'),
+          punto('Circuito'),
+          punto('Nacional en la CV'),
+          Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Container(
+                width: 12,
+                height: 12,
+                decoration: BoxDecoration(shape: BoxShape.circle, color: FlogColors.lima.withValues(alpha: 0.55), border: Border.all(color: FlogColors.verde500, width: 1.5)),
+              ),
+              const SizedBox(width: 5),
+              Text('Inscrito', style: t),
+            ],
+          ),
+        ],
       ),
     );
   }

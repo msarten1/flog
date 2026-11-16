@@ -5,6 +5,7 @@ import '../../core/dates.dart';
 import '../../core/theme.dart';
 import '../../models/torneo.dart';
 import '../../services/acciones.dart';
+import '../../state/perfil_state.dart';
 import '../../state/torneos_state.dart';
 import '../../widgets/comunes.dart';
 
@@ -15,6 +16,7 @@ class DetallePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final s = context.watch<TorneosState>();
+    final perfil = context.watch<PerfilState>();
     final t = s.porId(id);
     if (t == null) {
       return Scaffold(
@@ -26,14 +28,16 @@ class DetallePage extends StatelessWidget {
         ),
       );
     }
-    return _Detalle(t: t, esNuevo: s.esNuevo(t));
+    return _Detalle(t: t, esNuevo: s.esNuevo(t), inscrito: perfil.estaInscrito(t.id), onInscrito: (v) => perfil.setInscrito(t.id, v));
   }
 }
 
 class _Detalle extends StatelessWidget {
-  const _Detalle({required this.t, required this.esNuevo});
+  const _Detalle({required this.t, required this.esNuevo, required this.inscrito, required this.onInscrito});
   final Torneo t;
   final bool esNuevo;
+  final bool inscrito;
+  final ValueChanged<bool> onInscrito;
 
   @override
   Widget build(BuildContext context) {
@@ -56,7 +60,7 @@ class _Detalle extends StatelessWidget {
               ),
             ],
             flexibleSpace: FlexibleSpaceBar(
-              collapseMode: CollapseMode.parallax,
+              collapseMode: CollapseMode.pin,
               background: Container(
                 decoration: const BoxDecoration(
                   gradient: LinearGradient(
@@ -85,6 +89,7 @@ class _Detalle extends StatelessWidget {
                             children: [
                               TipoBadge(t.tipo, enVerde: true),
                               if (esNuevo) const EtiquetaNuevo(),
+                              if (inscrito) const Etiqueta('Inscrito', color: FlogColors.verde900, fondo: FlogColors.lima, icono: Icons.check),
                             ],
                           ),
                           const SizedBox(height: 8),
@@ -134,7 +139,17 @@ class _Detalle extends StatelessWidget {
                       _Fila(Icons.info_outline, 'Consulta la ficha del torneo para inscribirte.'),
                   ],
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 14),
+                Card(
+                  child: SwitchListTile(
+                    secondary: Icon(inscrito ? Icons.check_circle : Icons.how_to_reg_outlined, color: inscrito ? FlogColors.verde500 : suave),
+                    title: Text(inscrito ? 'Estoy inscrito' : 'Me he inscrito', style: text.titleMedium),
+                    subtitle: Text(inscrito ? 'Se muestra en tu calendario y en tu perfil.' : 'Márcalo para verlo destacado en el calendario.', style: text.bodyMedium?.copyWith(color: suave)),
+                    value: inscrito,
+                    onChanged: onInscrito,
+                  ),
+                ),
+                const SizedBox(height: 14),
                 if (enlace != null)
                   FilledButton.icon(
                     onPressed: () => Acciones.abrirEnlace(context, enlace),

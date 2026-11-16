@@ -26,6 +26,8 @@ class TorneosState extends ChangeNotifier {
   String _provincia = 'Todas';
   String _tipo = 'Todos';
   bool _soloNuevos = false;
+  bool _soloInscritos = false;
+  Set<String> _inscritos = {};
 
   Catalogo? get catalogo => _catalogo;
   Cambios? get cambios => _cambios;
@@ -38,7 +40,16 @@ class TorneosState extends ChangeNotifier {
   String get provincia => _provincia;
   String get tipo => _tipo;
   bool get soloNuevos => _soloNuevos;
-  bool get hayFiltros => _query.isNotEmpty || _provincia != 'Todas' || _tipo != 'Todos' || _soloNuevos;
+  bool get soloInscritos => _soloInscritos;
+  bool get hayFiltros => numFiltrosActivos > 0;
+  int get numFiltrosActivos =>
+      (_query.isNotEmpty ? 1 : 0) + (_provincia != 'Todas' ? 1 : 0) + (_tipo != 'Todos' ? 1 : 0) + (_soloNuevos ? 1 : 0) + (_soloInscritos ? 1 : 0);
+
+  /// Ids marcados como inscritos (los mantiene PerfilState).
+  void setInscritos(Set<String> ids) {
+    _inscritos = ids;
+    notifyListeners();
+  }
 
   /// Carga inicial: local al instante y red después.
   Future<void> iniciar() async {
@@ -104,11 +115,17 @@ class TorneosState extends ChangeNotifier {
     notifyListeners();
   }
 
+  void toggleSoloInscritos() {
+    _soloInscritos = !_soloInscritos;
+    notifyListeners();
+  }
+
   void limpiarFiltros() {
     _query = '';
     _provincia = 'Todas';
     _tipo = 'Todos';
     _soloNuevos = false;
+    _soloInscritos = false;
     notifyListeners();
   }
 
@@ -136,6 +153,7 @@ class TorneosState extends ChangeNotifier {
       if (_provincia != 'Todas' && t.provincia != _provincia) return false;
       if (_tipo != 'Todos' && t.tipo != _tipo) return false;
       if (_soloNuevos && !esNuevo(t)) return false;
+      if (_soloInscritos && !_inscritos.contains(t.id)) return false;
       if (!t.coincide(_query)) return false;
       return true;
     }).toList();

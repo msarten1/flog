@@ -8,6 +8,7 @@ import 'core/config.dart';
 import 'core/theme.dart';
 import 'features/avisos/avisos_page.dart';
 import 'features/calendario/calendario_page.dart';
+import 'features/perfil/perfil_page.dart';
 import 'features/torneos/detalle_page.dart';
 import 'features/torneos/torneos_page.dart';
 import 'services/push_service.dart';
@@ -24,6 +25,7 @@ final GoRouter flogRouter = GoRouter(
         StatefulShellBranch(routes: [GoRoute(path: '/torneos', builder: (_, _) => const TorneosPage())]),
         StatefulShellBranch(routes: [GoRoute(path: '/calendario', builder: (_, _) => const CalendarioPage())]),
         StatefulShellBranch(routes: [GoRoute(path: '/avisos', builder: (_, _) => const AvisosPage())]),
+        StatefulShellBranch(routes: [GoRoute(path: '/perfil', builder: (_, _) => const PerfilPage())]),
       ],
     ),
     GoRoute(
@@ -92,6 +94,7 @@ class _Shell extends StatelessWidget {
           NavigationDestination(icon: Icon(Icons.sports_golf_outlined), selectedIcon: Icon(Icons.sports_golf), label: 'Torneos'),
           NavigationDestination(icon: Icon(Icons.calendar_month_outlined), selectedIcon: Icon(Icons.calendar_month), label: 'Calendario'),
           NavigationDestination(icon: Icon(Icons.notifications_outlined), selectedIcon: Icon(Icons.notifications), label: 'Avisos'),
+          NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Perfil'),
         ],
       ),
     );
