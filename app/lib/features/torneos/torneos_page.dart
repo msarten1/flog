@@ -48,7 +48,7 @@ class _TorneosPageState extends State<TorneosPage> {
               SliverToBoxAdapter(
                 child: EstadoVacio(
                   titulo: s.hayFiltros ? 'Nada con esos filtros' : 'No hay torneos próximos',
-                  texto: s.hayFiltros ? 'Prueba a quitar algún filtro o cambiar la búsqueda.' : 'Cada lunes se revisan las webs de la Federación y de los clubes.',
+                  texto: s.hayFiltros ? 'Prueba a quitar algún filtro o cambiar la búsqueda.' : 'Cada mañana se revisan las webs de la Federación y de los clubes.',
                   accion: s.hayFiltros
                       ? OutlinedButton.icon(
                           onPressed: () {

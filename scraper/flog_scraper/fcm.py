@@ -77,7 +77,7 @@ def _linea(t: dict) -> str:
 def mensajes_desde_cambios(cambios: Cambios) -> list[tuple[str, str, str, dict[str, str]]]:
     """Construye (topic, título, cuerpo, data) por provincia y uno global."""
     out = []
-    semana = fecha_corta(cambios.fecha)
+    semana = fecha_corta(cambios.fecha)  # fecha de la revisión
     for provincia, topic in config.FCM_TOPICS.items():
         nuevos = [t for t in cambios.nuevos if t["provincia"] == provincia]
         cambiados = [t for t in cambios.cambios if t["provincia"] == provincia]
@@ -94,7 +94,7 @@ def mensajes_desde_cambios(cambios: Cambios) -> list[tuple[str, str, str, dict[s
         out.append(
             (
                 config.FCM_TOPIC_GLOBAL,
-                f"Flog · semana del {semana}",
+                f"Flog · novedades del {semana}",
                 cambios.resumen() + (f" · {len(cambios.proximos_14_dias)} torneos en 14 días" if cambios.proximos_14_dias else ""),
                 {"screen": "novedades"},
             )

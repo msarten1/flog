@@ -2,7 +2,7 @@
 
 Flog es una app móvil (Flutter) con el calendario de torneos de golf amateur de
 Alicante, Valencia y Castellón, y avisos push cuando se anuncian torneos nuevos.
-Los datos los mantiene un scraper propio que se ejecuta cada lunes en GitHub Actions.
+Los datos los mantiene un scraper propio que se ejecuta cada mañana en GitHub Actions.
 
 ```
 data/        torneos.json (lo que consume la app) · changes.json (novedades de la última ejecución)
@@ -10,7 +10,7 @@ data/        torneos.json (lo que consume la app) · changes.json (novedades de 
 scraper/     paquete Python flog_scraper (fuentes, reglas, clasificador, dedupe, push)
 app/         proyecto Flutter
 branding/    logo e icono
-.github/     workflows: scraper (lunes 06:00 UTC), ci (tests)
+.github/     workflows: scraper (cada día 06:00 UTC), ci (tests)
 ```
 
 ## Fuentes

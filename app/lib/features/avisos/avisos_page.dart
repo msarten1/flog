@@ -35,7 +35,7 @@ class AvisosPage extends StatelessWidget {
                   Text('Avísame de torneos nuevos', style: text.titleLarge),
                   const SizedBox(height: 4),
                   Text(
-                    'Cada lunes se revisan las webs de la Federación y de los clubes. Si hay torneos nuevos o cambios en las provincias que elijas, recibirás una notificación.',
+                    'Cada mañana se revisan las webs de la Federación y de los clubes. Si hay torneos nuevos o cambios en las provincias que elijas, recibirás una notificación.',
                     style: text.bodyMedium?.copyWith(color: suave),
                   ),
                   const SizedBox(height: 8),

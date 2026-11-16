@@ -2,8 +2,8 @@ name: Actualizar torneos
 
 on:
   schedule:
-    # Lunes a las 06:00 UTC (07:00 en invierno / 08:00 en verano, hora de Madrid)
-    - cron: "0 6 * * 1"
+    # Cada día a las 06:00 UTC (07:00 en invierno / 08:00 en verano, hora de Madrid)
+    - cron: "0 6 * * *"
   workflow_dispatch:
     inputs:
       notify:
