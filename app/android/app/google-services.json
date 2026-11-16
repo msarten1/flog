@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "702203612856",
+    "project_id": "flog-96dcb",
+    "storage_bucket": "flog-96dcb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702203612856:android:53217bd5f05e3e9c3b2e4d",
+        "android_client_info": {
+          "package_name": "com.flog.flog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJ3Wi7o972-_NT1NKuskXKVMCI4s0FB44"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
