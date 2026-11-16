@@ -1,0 +1,44 @@
+{
+ "tornegolf-10017": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para damas, modalidad individual stableford, abierto a amateurs.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-9064": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para jugadores con licencia, modalidad scramble, abierto a amateurs.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-9092": {
+  "incluir": false,
+  "tipo": "Club",
+  "motivo": "Orden de mérito parejas, competición interna o liga interna, excluida según criterios.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-9490": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para jugadores con licencia, modalidad scramble, abierto a amateurs.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-9492": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford, abierto a amateurs.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-9644": {
+  "incluir": false,
+  "tipo": "Club",
+  "motivo": "Liguilla senior, competición interna o liga senior, excluida según criterios.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-9777": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Matchplay interclubes abierto a damas, torneo abierto de club o interclubes amateur.",
+  "modelo": "gpt-4.1-mini"
+ }
+}

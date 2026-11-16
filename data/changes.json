@@ -1,120 +1,17 @@
 {
  "fecha": "2026-11-16",
- "nuevos": [
-  {
-   "id": "golfcv-2706",
-   "fecha": "2026-12-20",
-   "nombre": "Circuito Masculino y Femenino CV 4/4",
-   "club": "El Saler",
-   "provincia": "Valencia",
-   "tipo": "Federación"
-  },
-  {
-   "id": "tornegolf-9064",
-   "fecha": "2026-11-17",
-   "nombre": "9 & Tapas",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10037",
-   "fecha": "2026-11-19",
-   "nombre": "Final XIV Circuito por Equipos AESGOLF C.V.",
-   "club": "El Plantío",
-   "provincia": "Alicante",
-   "tipo": "Circuito"
-  },
+ "nuevos": [],
+ "cambios": [
   {
    "id": "tornegolf-9092",
    "fecha": "2026-11-21",
    "nombre": "Orden Mérito Parejas",
    "club": "Panorámica Golf",
    "provincia": "Castellón",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-9869",
-   "fecha": "2026-11-22",
-   "nombre": "4º- MAJOR (FUSION 2x1 Circuito BCG y MVGT) PONIENTE (Parejas e Individual)",
-   "club": "Meliá Villaitana Golf",
-   "provincia": "Alicante",
-   "tipo": "Circuito"
-  },
-  {
-   "id": "tornegolf-9987",
-   "fecha": "2026-11-28",
-   "nombre": "Copa de Otoño 2026",
-   "club": "Altea Club de Golf",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-9728",
-   "fecha": "2026-12-05",
-   "nombre": "Torneo OM Individual",
-   "club": "Panorámica Golf",
-   "provincia": "Castellón",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-9740",
-   "fecha": "2026-12-06",
-   "nombre": "Las Colinas Trophy - V Edición",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-9777",
-   "fecha": "2026-12-09",
-   "nombre": "Matchplay Interclubes AESGOLF Damas de la C. Valenciana",
-   "club": "Oliva Nova",
-   "provincia": "Valencia",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-9992",
-   "fecha": "2026-12-12",
-   "nombre": "PRO-AM - 125 Aniversario CAMARA ORIHUELA - XIII Memorial Benéfico ANTONIO PEDRERA SOLER",
-   "club": "Villamartín",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10009",
-   "fecha": "2026-12-12",
-   "nombre": "Torneo Noveles",
-   "club": "El Bosque",
-   "provincia": "Valencia",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10017",
-   "fecha": "2026-12-13",
-   "nombre": "VIII Damas Marfil Heritage",
-   "club": "El Bosque",
-   "provincia": "Valencia",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-8879",
-   "fecha": "2027-05-05",
-   "nombre": "Campeonato de España Dobles Senior Masculino 2027",
-   "club": "Mediterráneo Golf",
-   "provincia": "Castellón",
-   "tipo": "Nacional en la CV"
-  },
-  {
-   "id": "tornegolf-8880",
-   "fecha": "2027-05-07",
-   "nombre": "Campeonato de España Individual Senior Masculino 2027",
-   "club": "Mediterráneo Golf",
-   "provincia": "Castellón",
-   "tipo": "Nacional en la CV"
+   "tipo": "Club",
+   "cambio": "Posiblemente cancelado"
   }
  ],
- "cambios": [],
  "eliminados": [],
  "proximos_14_dias": [
   {
@@ -187,7 +84,8 @@
    "nombre": "Orden Mérito Parejas",
    "club": "Panorámica Golf",
    "provincia": "Castellón",
-   "tipo": "Club"
+   "tipo": "Club",
+   "cambio": "Posiblemente cancelado"
   },
   {
    "id": "tornegolf-9869",
@@ -319,44 +217,13 @@
  ],
  "revisar": [
   {
-   "id": "tornegolf-9064",
-   "fecha": "2026-11-17",
-   "nombre": "9 & Tapas",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
    "id": "tornegolf-9092",
    "fecha": "2026-11-21",
    "nombre": "Orden Mérito Parejas",
    "club": "Panorámica Golf",
    "provincia": "Castellón",
-   "tipo": "Club"
-  },
-  {
-   "id": "lamarquesa-my-lawyer-v",
-   "fecha": "2026-11-28",
-   "nombre": "V My Lawyer in Spain",
-   "club": "La Marquesa",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-9777",
-   "fecha": "2026-12-09",
-   "nombre": "Matchplay Interclubes AESGOLF Damas de la C. Valenciana",
-   "club": "Oliva Nova",
-   "provincia": "Valencia",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10017",
-   "fecha": "2026-12-13",
-   "nombre": "VIII Damas Marfil Heritage",
-   "club": "El Bosque",
-   "provincia": "Valencia",
-   "tipo": "Club"
+   "tipo": "Club",
+   "cambio": "Posiblemente cancelado"
   }
  ]
 }
