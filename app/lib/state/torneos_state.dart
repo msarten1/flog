@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/foundation.dart';
 
 import '../core/dates.dart';
@@ -66,7 +68,8 @@ class TorneosState extends ChangeNotifier {
       _sinConexion = false;
       _cambios = await _repo.descargarCambios() ?? _cambios;
     } catch (e) {
-      _sinConexion = true;
+      // Un error HTTP (p. ej. 404) no es falta de conexión: se usa la copia local sin avisar.
+      _sinConexion = e is! HttpException;
       _error = e.toString();
       debugPrint('refrescar: $e');
       _cambios ??= await _repo.leerCambiosLocal();
@@ -143,11 +146,19 @@ class TorneosState extends ChangeNotifier {
     return m;
   }
 
-  List<Torneo> torneosDelDia(DateTime d) => vigentes.where((t) => t.cubre(d)).toList();
+  /// table_calendar entrega los días en UTC: se normalizan a fecha local.
+  static DateTime _dia(DateTime d) => DateTime(d.year, d.month, d.day);
+
+  List<Torneo> torneosDelDia(DateTime d) {
+    final dia = _dia(d);
+    return vigentes.where((t) => t.cubre(dia)).toList();
+  }
 
   /// Torneos (vigentes o no) que cubren un día cualquiera: para los puntos del calendario.
-  List<Torneo> todosDelDia(DateTime d) =>
-      (_catalogo?.torneos ?? const []).where((t) => t.cubre(d)).toList();
+  List<Torneo> todosDelDia(DateTime d) {
+    final dia = _dia(d);
+    return (_catalogo?.torneos ?? const []).where((t) => t.cubre(dia)).toList();
+  }
 
   int get nuevosEstaSemana => vigentes.where(esNuevo).length;
 
