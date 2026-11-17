@@ -1,6 +1,79 @@
 {
  "dias": [
   {
+   "fecha": "2026-11-17",
+   "nuevos": [
+    {
+     "id": "tornegolf-10078",
+     "fecha": "2026-11-17",
+     "nombre": "Torneo Grupo Bélgica-España Noviembre 2026",
+     "club": "La Sella Golf",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10079",
+     "fecha": "2026-11-17",
+     "nombre": "Green Jackets 17-11-2026",
+     "club": "Font del Llop",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10083",
+     "fecha": "2026-11-18",
+     "nombre": "Cbgs Texas Scramble",
+     "club": "Bonalba",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10087",
+     "fecha": "2026-11-19",
+     "nombre": "Las Colinas Spain Day 1",
+     "club": "Las Colinas Golf & Country Club",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10089",
+     "fecha": "2026-11-20",
+     "nombre": "Las Colinas Spain -day 2",
+     "club": "Las Colinas Golf & Country Club",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10092",
+     "fecha": "2026-11-21",
+     "nombre": "Las Colinas Spain -day 3",
+     "club": "Las Colinas Golf & Country Club",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10096",
+     "fecha": "2026-12-12",
+     "nombre": "Final VII Circuito La Finca Resort",
+     "club": "Finca Algorfa",
+     "provincia": "Alicante",
+     "tipo": "Circuito"
+    }
+   ],
+   "cambios": [
+    {
+     "id": "tornegolf-9064",
+     "fecha": "2026-11-17",
+     "nombre": "9&tapas",
+     "club": "Las Colinas Golf & Country Club",
+     "provincia": "Alicante",
+     "tipo": "Club",
+     "cambio": "Inscripción abierta"
+    }
+   ],
+   "eliminados": []
+  },
+  {
    "fecha": "2026-11-16",
    "nuevos": [],
    "cambios": [],

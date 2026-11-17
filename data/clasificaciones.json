@@ -5,6 +5,30 @@
   "motivo": "Torneo abierto de club para damas, modalidad individual stableford, abierto a amateurs.",
   "modelo": "gpt-4.1-mini"
  },
+ "tornegolf-10079": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford, sin indicación de ser competición interna.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-10087": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford, sin indicación de ser competición interna.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-10089": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford, sin indicación de ser competición interna.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-10092": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford, sin indicación de ser competición interna.",
+  "modelo": "gpt-4.1-mini"
+ },
  "tornegolf-9064": {
   "incluir": true,
   "tipo": "Club",

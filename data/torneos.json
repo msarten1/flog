@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16",
+ "actualizado": "2026-11-17",
  "primera": "2026-11-08",
  "nota": "Torneos amateur de la Comunitat Valenciana (Alicante, Valencia, Castellón). Se excluyen competiciones profesionales, juveniles y las ligas internas de sociedades/socios.",
  "fuentes": [
@@ -58,16 +58,45 @@
   {
    "id": "tornegolf-9064",
    "fecha": "2026-11-17",
-   "nombre": "9 & Tapas",
+   "nombre": "9&tapas",
    "club": "Las Colinas Golf & Country Club",
    "provincia": "Alicante",
    "tipo": "Club",
    "modalidad": "Scramble Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-17-noviembre-2026-9-tapas-las-colinas-golf-country-club--9064",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/698b1d6a74e61b41732ca798/summary",
+   "estado_inscripcion": "abierta",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-17-noviembre-2026-9tapas-las-colinas-golf-country-club--9490",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6ae35a94e9762da1ae309612/summary",
    "fuente": "tornegolf",
-   "anadido": "2026-11-16"
+   "anadido": "2026-11-16",
+   "cambio": "Inscripción abierta"
+  },
+  {
+   "id": "tornegolf-10079",
+   "fecha": "2026-11-17",
+   "nombre": "Green Jackets 17-11-2026",
+   "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-17-noviembre-2026-green-jackets-17-11-2026-font-del-llop--10079",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afaedfb5445bc1029112404/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-17"
+  },
+  {
+   "id": "tornegolf-10078",
+   "fecha": "2026-11-17",
+   "nombre": "Torneo Grupo Bélgica-España Noviembre 2026",
+   "club": "La Sella Golf",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-17-noviembre-2026-torneo-grupo-belgica-espana-no-campo-la-sella-llebeigmestral--10078",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afab1785445bc102982b3ac/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-17"
   },
   {
    "id": "fgcv-liguilla-femenina-10",
@@ -86,6 +115,20 @@
    "anadido": "2026-11-08"
   },
   {
+   "id": "tornegolf-10083",
+   "fecha": "2026-11-18",
+   "nombre": "Cbgs Texas Scramble",
+   "club": "Bonalba",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Scramble Stroke Play",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-18-noviembre-2026-cbgs-texas-scramble-bonalba--10083",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afad02123d5370df087b816/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-17"
+  },
+  {
    "id": "tornegolf-10037",
    "fecha": "2026-11-19",
    "nombre": "Final XIV Circuito por Equipos AESGOLF C.V.",
@@ -98,6 +141,34 @@
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6af98632440203a820598be1/summary",
    "fuente": "tornegolf",
    "anadido": "2026-11-16"
+  },
+  {
+   "id": "tornegolf-10087",
+   "fecha": "2026-11-19",
+   "nombre": "Las Colinas Spain Day 1",
+   "club": "Las Colinas Golf & Country Club",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-19-noviembre-2026-las-colinas-spain-day-1-las-colinas-golf-country-club--10087",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afb05b623d5370df0220f0c/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-17"
+  },
+  {
+   "id": "tornegolf-10089",
+   "fecha": "2026-11-20",
+   "nombre": "Las Colinas Spain -day 2",
+   "club": "Las Colinas Golf & Country Club",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-20-noviembre-2026-las-colinas-spain-day-2-las-colinas-golf-country-club--10089",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afb66eb5445bc10293787b0/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-17"
   },
   {
    "id": "msc-cruceros-manises",
@@ -123,7 +194,7 @@
    "tipo": "Federación",
    "modalidad": "Copa Canadá · Stroke Play",
    "inscripcion": "Inscripción del 6 oct al 16 nov",
-   "estado_inscripcion": "abierta",
+   "estado_inscripcion": "cerrada",
    "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2718",
    "enlace_inscripcion": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2718",
    "fuente": "golfcv",
@@ -142,6 +213,20 @@
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6adf7da805d0e598f32da3d7/summary",
    "fuente": "tornegolf",
    "anadido": "2026-11-08"
+  },
+  {
+   "id": "tornegolf-10092",
+   "fecha": "2026-11-21",
+   "nombre": "Las Colinas Spain -day 3",
+   "club": "Las Colinas Golf & Country Club",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-21-noviembre-2026-las-colinas-spain-day-3-las-colinas-golf-country-club--10092",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afb67995445bc102946e817/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-17"
   },
   {
    "id": "bonalba-mutxamel-v",
@@ -493,6 +578,20 @@
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6aed923aec94b7c14e95eca5/summary",
    "fuente": "tornegolf",
    "anadido": "2026-11-16"
+  },
+  {
+   "id": "tornegolf-10096",
+   "fecha": "2026-12-12",
+   "nombre": "Final VII Circuito La Finca Resort",
+   "club": "Finca Algorfa",
+   "provincia": "Alicante",
+   "tipo": "Circuito",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-12-diciembre-2026-final-vii-circuito-la-finca-re-finca-algorfa-la-finca--10096",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afac5ac23d5370df067b99e/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-17"
   },
   {
    "id": "tornegolf-9992",
