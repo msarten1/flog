@@ -8,7 +8,8 @@ import '../../models/torneo.dart';
 import '../../state/perfil_state.dart';
 import '../../state/torneos_state.dart';
 import '../../widgets/comunes.dart';
-import '../torneos/torneos_page.dart';
+import '../../widgets/filtros_sheet.dart';
+import '../../widgets/lista_torneos.dart';
 
 class CalendarioPage extends StatefulWidget {
   const CalendarioPage({super.key});
@@ -20,6 +21,14 @@ class CalendarioPage extends StatefulWidget {
 class _CalendarioPageState extends State<CalendarioPage> {
   DateTime _foco = Fechas.hoy();
   DateTime? _seleccion;
+  final _busqueda = TextEditingController();
+  bool _buscando = false;
+
+  @override
+  void dispose() {
+    _busqueda.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -27,16 +36,66 @@ class _CalendarioPageState extends State<CalendarioPage> {
     final perfil = context.watch<PerfilState>();
     final hoy = Fechas.hoy();
     final sel = _seleccion;
-    final delDia = sel == null ? const <Torneo>[] : s.todosDelDia(sel);
-    final delMes = s.vigentes.where((t) => t.inicio.year == _foco.year && t.inicio.month == _foco.month).toList();
+    final filtrados = s.filtrados;
+    final delDia = sel == null ? const <Torneo>[] : filtrados.where((t) => t.cubre(DateTime(sel.year, sel.month, sel.day))).toList();
+    final delMes = filtrados.where((t) => t.inicio.year == _foco.year && t.inicio.month == _foco.month).toList();
+    final nFiltros = s.numFiltrosActivos;
     final tokens = context.flog;
     final text = Theme.of(context).textTheme;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Calendario')),
+      appBar: AppBar(
+        title: _buscando
+            ? TextField(
+                controller: _busqueda,
+                autofocus: true,
+                onChanged: s.setQuery,
+                textInputAction: TextInputAction.search,
+                style: text.bodyLarge?.copyWith(color: Colors.white),
+                cursorColor: FlogColors.lima,
+                decoration: InputDecoration(
+                  hintText: 'Torneo, club o modalidad',
+                  isDense: true,
+                  filled: false,
+                  border: InputBorder.none,
+                  enabledBorder: InputBorder.none,
+                  focusedBorder: InputBorder.none,
+                  contentPadding: EdgeInsets.zero,
+                  hintStyle: text.bodyLarge?.copyWith(color: Colors.white.withValues(alpha: 0.6)),
+                ),
+              )
+            : const Text('Calendario'),
+        actions: [
+          IconButton(
+            tooltip: _buscando ? 'Cerrar búsqueda' : 'Buscar',
+            icon: Icon(_buscando ? Icons.close : Icons.search),
+            onPressed: () {
+              setState(() => _buscando = !_buscando);
+              if (!_buscando) {
+                _busqueda.clear();
+                s.setQuery('');
+              }
+            },
+          ),
+          Badge(
+            isLabelVisible: nFiltros > 0,
+            label: Text('$nFiltros'),
+            backgroundColor: FlogColors.lima,
+            textColor: FlogColors.verde900,
+            offset: const Offset(-6, 6),
+            child: IconButton(
+              tooltip: 'Filtros',
+              icon: Icon(nFiltros > 0 ? Icons.filter_alt : Icons.filter_alt_outlined),
+              onPressed: () => abrirFiltros(context, s),
+            ),
+          ),
+          const SizedBox(width: 4),
+        ],
+      ),
       body: ListView(
         padding: const EdgeInsets.only(bottom: 32),
         children: [
+          if (nFiltros > 0) ResumenFiltros(state: s),
           Container(
             margin: const EdgeInsets.fromLTRB(16, 16, 16, 8),
             decoration: BoxDecoration(
@@ -53,7 +112,7 @@ class _CalendarioPageState extends State<CalendarioPage> {
               startingDayOfWeek: StartingDayOfWeek.monday,
               availableCalendarFormats: const {CalendarFormat.month: 'Mes'},
               selectedDayPredicate: (d) => sel != null && Fechas.mismoDia(d, sel),
-              eventLoader: s.todosDelDia,
+              eventLoader: (d) => filtrados.where((t) => t.cubre(DateTime(d.year, d.month, d.day))).toList(),
               onDaySelected: (d, f) => setState(() {
                 _seleccion = Fechas.mismoDia(d, sel ?? DateTime(0)) ? null : d;
                 _foco = f;
@@ -88,7 +147,8 @@ class _CalendarioPageState extends State<CalendarioPage> {
               calendarBuilders: CalendarBuilders<Torneo>(
                 // Día con un torneo en el que estoy inscrito: anillo lima.
                 defaultBuilder: (context, day, focused) {
-                  if (!s.todosDelDia(day).any((t) => perfil.estaInscrito(t.id))) return null;
+                  final dia = DateTime(day.year, day.month, day.day);
+                  if (!filtrados.any((t) => t.cubre(dia) && perfil.estaInscrito(t.id))) return null;
                   return Center(
                     child: Container(
                       width: 36,
@@ -135,13 +195,19 @@ class _CalendarioPageState extends State<CalendarioPage> {
               derecha: TextButton(onPressed: () => setState(() => _seleccion = null), child: const Text('Ver todo el mes')),
             ),
             if (delDia.isEmpty)
-              const EstadoVacio(titulo: 'Sin torneos ese día', icono: Icons.event_busy_outlined)
+              EstadoVacio(titulo: nFiltros > 0 ? 'Nada ese día con esos filtros' : 'Sin torneos ese día', icono: Icons.event_busy_outlined)
             else
               Card(margin: const EdgeInsets.symmetric(horizontal: 16), child: ListaTorneos(torneos: delDia, mostrarFecha: false)),
+          ] else if (s.query.isNotEmpty) ...[
+            TituloSeccion('Resultados', derecha: Text('${filtrados.length}', style: text.titleMedium?.copyWith(color: tokens.textoSuave))),
+            if (filtrados.isEmpty)
+              const EstadoVacio(titulo: 'Sin resultados', texto: 'Prueba con otro nombre, club o modalidad.', icono: Icons.search_off)
+            else
+              Card(margin: const EdgeInsets.symmetric(horizontal: 16), child: ListaTorneos(torneos: filtrados)),
           ] else ...[
             TituloSeccion('Torneos de ${Fechas.mesAnio(_foco).toLowerCase()}'),
             if (delMes.isEmpty)
-              const EstadoVacio(titulo: 'Sin torneos este mes', texto: 'Toca un día o cambia de mes.', icono: Icons.event_busy_outlined)
+              EstadoVacio(titulo: nFiltros > 0 ? 'Nada este mes con esos filtros' : 'Sin torneos este mes', texto: 'Toca un día o cambia de mes.', icono: Icons.event_busy_outlined)
             else
               Card(margin: const EdgeInsets.symmetric(horizontal: 16), child: ListaTorneos(torneos: delMes)),
           ],

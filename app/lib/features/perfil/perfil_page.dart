@@ -10,7 +10,7 @@ import '../../services/rfeg_service.dart';
 import '../../state/perfil_state.dart';
 import '../../state/torneos_state.dart';
 import '../../widgets/comunes.dart';
-import '../torneos/torneos_page.dart';
+import '../../widgets/lista_torneos.dart';
 
 class PerfilPage extends StatelessWidget {
   const PerfilPage({super.key});
@@ -70,7 +70,7 @@ class PerfilPage extends StatelessWidget {
                       ),
                       const SizedBox(height: 2),
                       Text(
-                        [if (p.club.isNotEmpty) p.club, if (p.licencia.isNotEmpty) 'Lic. ${p.licencia}'].join(' · '),
+                        [if (p.club.isNotEmpty) p.club, if (p.licencia.isNotEmpty) 'Lic. ${p.licencia}', if (p.email.isNotEmpty) p.email].join(' · '),
                         style: text.bodyMedium?.copyWith(color: Colors.white.withValues(alpha: 0.75)),
                       ),
                     ],
@@ -193,11 +193,12 @@ class _FormularioPerfilState extends State<_FormularioPerfil> {
   late final _nombre = TextEditingController(text: widget.inicial.nombre);
   late final _club = TextEditingController(text: widget.inicial.club);
   late final _licencia = TextEditingController(text: widget.inicial.licencia);
+  late final _email = TextEditingController(text: widget.inicial.email);
   late final _hcp = TextEditingController(text: widget.inicial.handicap?.toStringAsFixed(1) ?? '');
 
   @override
   void dispose() {
-    for (final c in [_nombre, _club, _licencia, _hcp]) {
+    for (final c in [_nombre, _club, _licencia, _email, _hcp]) {
       c.dispose();
     }
     super.dispose();
@@ -232,6 +233,8 @@ class _FormularioPerfilState extends State<_FormularioPerfil> {
               ),
             ],
           ),
+          const SizedBox(height: 10),
+          TextField(controller: _email, decoration: const InputDecoration(labelText: 'Email (para las inscripciones)'), keyboardType: TextInputType.emailAddress),
           const SizedBox(height: 18),
           FilledButton(
             onPressed: () async {
@@ -241,6 +244,7 @@ class _FormularioPerfilState extends State<_FormularioPerfil> {
                   nombre: _nombre.text.trim(),
                   club: _club.text.trim(),
                   licencia: _licencia.text.trim(),
+                  email: _email.text.trim(),
                   handicap: hcp,
                   borrarHandicap: _hcp.text.trim().isEmpty,
                   handicapActualizado: hcp != null && hcp != widget.inicial.handicap ? Fechas.iso(Fechas.hoy()) : null,

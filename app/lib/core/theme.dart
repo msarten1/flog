@@ -1,5 +1,4 @@
 import 'package:material_ui/material_ui.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 /// Paleta Flog (ver branding/paleta.md).
 class FlogColors {
@@ -96,6 +95,23 @@ class FlogTokens extends ThemeExtension<FlogTokens> {
   }
 }
 
+/// Fraunces (variable, empaquetada en assets/fonts) para títulos; Inter para el cuerpo.
+class FlogFonts {
+  FlogFonts._();
+
+  static TextStyle titulo({Color? color, double peso = 700, bool suave = true}) => TextStyle(
+        fontFamily: 'Fraunces',
+        fontWeight: FontWeight.w700,
+        color: color,
+        fontVariations: [
+          FontVariation('wght', peso),
+          const FontVariation('opsz', 72),
+          FontVariation('SOFT', suave ? 60 : 0),
+          const FontVariation('WONK', 0),
+        ],
+      );
+}
+
 extension FlogContext on BuildContext {
   FlogTokens get flog => Theme.of(this).extension<FlogTokens>()!;
   bool get esOscuro => Theme.of(this).brightness == Brightness.dark;
@@ -123,21 +139,24 @@ class FlogTheme {
       onTertiary: Colors.white,
     );
 
-    final cuerpo = GoogleFonts.interTextTheme(
-      oscuro ? ThemeData.dark().textTheme : ThemeData.light().textTheme,
-    ).apply(bodyColor: tokens.texto, displayColor: tokens.texto);
-    final titulos = GoogleFonts.sora(fontWeight: FontWeight.w700, color: tokens.texto);
+    final base = (oscuro ? ThemeData.dark() : ThemeData.light()).textTheme;
+    final cuerpo = base
+        .apply(fontFamily: 'Inter', bodyColor: tokens.texto, displayColor: tokens.texto)
+        .copyWith(
+          titleMedium: base.titleMedium?.copyWith(fontFamily: 'Inter', fontWeight: FontWeight.w600, fontSize: 16, color: tokens.texto),
+          bodyLarge: base.bodyLarge?.copyWith(fontFamily: 'Inter', fontSize: 16, height: 1.45, color: tokens.texto),
+          bodyMedium: base.bodyMedium?.copyWith(fontFamily: 'Inter', fontSize: 14.5, height: 1.4, color: tokens.texto),
+          labelLarge: base.labelLarge?.copyWith(fontFamily: 'Inter', fontWeight: FontWeight.w600, fontSize: 15, color: tokens.texto),
+          labelMedium: base.labelMedium?.copyWith(fontFamily: 'Inter', fontWeight: FontWeight.w600, letterSpacing: 0.2, color: tokens.texto),
+          labelSmall: base.labelSmall?.copyWith(fontFamily: 'Inter', color: tokens.texto),
+        );
+    final titulos = FlogFonts.titulo(color: tokens.texto);
     final textTheme = cuerpo.copyWith(
-      displayLarge: titulos.copyWith(fontSize: 44, height: 1.05, letterSpacing: -1.2),
-      displayMedium: titulos.copyWith(fontSize: 34, height: 1.1, letterSpacing: -0.8),
-      headlineMedium: titulos.copyWith(fontSize: 26, height: 1.15, letterSpacing: -0.5),
-      headlineSmall: titulos.copyWith(fontSize: 22, height: 1.2, letterSpacing: -0.3),
-      titleLarge: titulos.copyWith(fontSize: 19, height: 1.25, letterSpacing: -0.2),
-      titleMedium: cuerpo.titleMedium?.copyWith(fontWeight: FontWeight.w600, fontSize: 16),
-      bodyLarge: cuerpo.bodyLarge?.copyWith(fontSize: 16, height: 1.45),
-      bodyMedium: cuerpo.bodyMedium?.copyWith(fontSize: 14.5, height: 1.4),
-      labelLarge: cuerpo.labelLarge?.copyWith(fontWeight: FontWeight.w600, fontSize: 15),
-      labelMedium: cuerpo.labelMedium?.copyWith(fontWeight: FontWeight.w600, letterSpacing: 0.2),
+      displayLarge: titulos.copyWith(fontSize: 46, height: 1.05, letterSpacing: -1.0),
+      displayMedium: titulos.copyWith(fontSize: 36, height: 1.1, letterSpacing: -0.6),
+      headlineMedium: titulos.copyWith(fontSize: 28, height: 1.15, letterSpacing: -0.4),
+      headlineSmall: titulos.copyWith(fontSize: 24, height: 1.2, letterSpacing: -0.3),
+      titleLarge: titulos.copyWith(fontSize: 21, height: 1.25, letterSpacing: -0.2),
     );
 
     return ThemeData(
@@ -154,7 +173,7 @@ class FlogTheme {
         elevation: 0,
         scrolledUnderElevation: 0,
         centerTitle: false,
-        titleTextStyle: titulos.copyWith(fontSize: 20, color: Colors.white),
+        titleTextStyle: titulos.copyWith(fontSize: 22, color: Colors.white),
       ),
       cardTheme: CardThemeData(
         color: tokens.superficie,

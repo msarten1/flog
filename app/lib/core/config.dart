@@ -28,4 +28,10 @@ class FlogConfig {
   static const String sufijoSemanal = '-semanal';
 
   static const String canalNotificaciones = 'flog_torneos';
+
+  /// Webs que no admiten inscripción desde el navegador (se hace en la app Mi LV de la Federación).
+  static const List<String> hostsAppFederacion = ['golfcv.com', 'milv.es', 'rfegolf.es'];
+
+  /// Búsqueda de Mi LV en Google Play.
+  static const String miLvPlayStore = 'https://play.google.com/store/search?q=Mi%20LV%20golf&c=apps';
 }

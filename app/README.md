@@ -22,14 +22,17 @@ Estructura de `lib/`:
 
 ```
 main.dart                 arranque: Provider, Firebase (si está configurado), locale
-app.dart                  go_router con NavigationBar (Torneos · Calendario · Avisos) y /torneo/:id
+app.dart                  go_router con NavigationBar (Hoy · Calendario · Avisos · Perfil), /torneo/:id y /inscribir/:id
 core/                     config (URLs, temas FCM), tema (paleta Flog), fechas en español
 models/                   Torneo, Catalogo, Cambios (espejo de data/*.json)
-services/                 TorneosRepository (caché + ETag), PushService (FCM + locales), Acciones
-state/                    TorneosState (filtros, agrupación por mes, novedades)
-features/                 pantallas: torneos (lista + detalle), calendario, avisos
-widgets/                  tarjeta de torneo, etiquetas, caja de fecha, estados vacíos
+services/                 TorneosRepository (caché + ETag), PushService (FCM + locales), Acciones,
+                          RfegService (hándicap público), AutofillJs (relleno de formularios)
+state/                    TorneosState (filtros, novedades, consultas de Hoy), PerfilState (datos e inscritos)
+features/                 pantallas: hoy, calendario, torneos/detalle, inscripcion (WebView asistida), avisos, perfil
+widgets/                  fila de agenda, lista, panel de filtros, etiquetas, estados vacíos
 ```
+
+Tipografía: Fraunces (títulos) e Inter (cuerpo), empaquetadas en `assets/fonts/`.
 
 Los datos se leen de `https://raw.githubusercontent.com/msarten1/flog/main/data/torneos.json`
 (constante en `lib/core/config.dart`). La app lleva una copia en `assets/data/torneos.json`

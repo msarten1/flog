@@ -193,4 +193,49 @@ class TorneosState extends ChangeNotifier {
   }
 
   Torneo? porId(String id) => _catalogo?.porId(id);
+
+  /// Próximo torneo marcado como inscrito (o null).
+  Torneo? proximoInscrito(Set<String> inscritos) {
+    final hoy = Fechas.hoy();
+    for (final t in vigentes) {
+      if (inscritos.contains(t.id) && !t.fin.isBefore(hoy)) return t;
+    }
+    return null;
+  }
+
+  /// Próximo torneo en las provincias dadas (todas si el conjunto está vacío).
+  Torneo? proximoEn(Set<String> provincias) {
+    final hoy = Fechas.hoy();
+    for (final t in vigentes) {
+      if (!t.inicio.isBefore(hoy) && (provincias.isEmpty || provincias.contains(t.provincia))) return t;
+    }
+    return null;
+  }
+
+  /// Nuevos esta semana en las provincias dadas (todas si el conjunto está vacío).
+  List<Torneo> nuevosEn(Set<String> provincias) =>
+      vigentes.where((t) => esNuevo(t) && (provincias.isEmpty || provincias.contains(t.provincia))).toList();
+
+  /// Torneos que empiezan entre hoy y el domingo.
+  List<Torneo> get estaSemana {
+    final hoy = Fechas.hoy();
+    final domingo = hoy.add(Duration(days: 7 - hoy.weekday));
+    return vigentes.where((t) => !t.inicio.isBefore(hoy) && !t.inicio.isAfter(domingo)).toList();
+  }
+
+  /// Torneos cuya inscripción cierra pronto según la última revisión, con su fecha de cierre.
+  List<({Torneo torneo, String? cierre})> get cierranPronto {
+    final c = _cambios;
+    if (c == null) return const [];
+    final out = <({Torneo torneo, String? cierre})>[];
+    final hoy = Fechas.iso(Fechas.hoy());
+    for (final e in c.inscripcionesCierran) {
+      final t = porId(e['id'] as String);
+      final cierre = e['cierre'] as String?;
+      if (t == null || !t.vigente) continue;
+      if (cierre != null && cierre.compareTo(hoy) < 0) continue; // ya cerrada
+      out.add((torneo: t, cierre: cierre));
+    }
+    return out;
+  }
 }

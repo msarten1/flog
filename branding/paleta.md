@@ -16,15 +16,17 @@ Inspiración: Hole19 / Golf GameBook (verde profundo, tarjetas claras, tipograf�
 | `linea` | `#DCE3DA` | `#24392F` | Bordes |
 | `aviso` | `#E2572B` | `#FF7A50` | Cambios, cancelaciones |
 
-Tipografía: **Sora** 700 para títulos y cifras, **Inter** 400/500/600 para cuerpo.
+Tipografía: **Fraunces** 700 (variable, eje SOFT 60) para títulos y el nombre, **Inter** 400/500/600 para cuerpo.
 Radio de tarjeta 16 px, chips tipo píldora, botones de 52 px de alto.
 
 ## Logo
 
-`logo.svg`: casilla de calendario (con anillas lima) y una bandera de green
-clavada en el hoyo. `icon-foreground.svg` es la capa frontal del icono
-adaptativo de Android (fondo `#0F3D2E` sólido). `wordmark.svg` combina icono
-y nombre.
+`logo.svg`: emblema tipo escudo de club: anillo dorado, campo verde con
+degradado, green con textura de siega, bandera lima con pliegue y banda
+dorada con "FLOG" en Fraunces. `icon-foreground.svg` es el escudo sin texto
+para el icono adaptativo de Android (fondo `#0F3D2E`). `wordmark.svg` combina
+escudo y nombre. Para que el texto del SVG use Fraunces al exportar:
+`brew install --cask font-fraunces`.
 
 Exportar a PNG (necesita `rsvg-convert`, `brew install librsvg`):
 

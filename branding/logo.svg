@@ -1,39 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
-  <!-- Flog · icono: una bandera de green dentro de una casilla de calendario -->
+  <!-- Flog · emblema tipo escudo de club: green con siega, bandera lima, anillo dorado y banda con el nombre -->
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#15523D"/>
-      <stop offset="1" stop-color="#0B2E22"/>
+    <radialGradient id="campo" cx="50%" cy="38%" r="70%">
+      <stop offset="0" stop-color="#1B5E46"/>
+      <stop offset="0.6" stop-color="#0F3D2E"/>
+      <stop offset="1" stop-color="#082A1F"/>
+    </radialGradient>
+    <linearGradient id="oro" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F0D77A"/>
+      <stop offset="0.45" stop-color="#C9A227"/>
+      <stop offset="1" stop-color="#8E6D12"/>
     </linearGradient>
-    <linearGradient id="flag" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#CDF59E"/>
-      <stop offset="1" stop-color="#A9DB6E"/>
+    <linearGradient id="oroBanda" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E6C85A"/>
+      <stop offset="1" stop-color="#B8921F"/>
     </linearGradient>
+    <linearGradient id="bandera" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D2F5A4"/>
+      <stop offset="1" stop-color="#A6D96A"/>
+    </linearGradient>
+    <pattern id="siega" patternUnits="userSpaceOnUse" width="96" height="96" patternTransform="rotate(-28)">
+      <rect width="48" height="96" fill="#2F8257"/>
+      <rect x="48" width="48" height="96" fill="#3C9867"/>
+    </pattern>
+    <clipPath id="clipEscudo">
+      <path d="M512 150 C 640 150 760 182 842 212 C 842 450 826 640 512 896 C 198 640 182 450 182 212 C 264 182 384 150 512 150 Z"/>
+    </clipPath>
+    <filter id="sombra" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#000" flood-opacity="0.28"/>
+    </filter>
   </defs>
 
-  <!-- fondo -->
-  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+  <!-- anillo exterior dorado -->
+  <path filter="url(#sombra)" d="M512 72 C 668 72 814 110 912 146 C 912 436 892 664 512 968 C 132 664 112 436 112 146 C 210 110 356 72 512 72 Z" fill="url(#oro)"/>
+  <!-- borde interior oscuro -->
+  <path d="M512 106 C 656 106 790 140 882 172 C 882 440 864 650 512 930 C 160 650 142 440 142 172 C 234 140 368 106 512 106 Z" fill="#0B2E22"/>
+  <!-- hilo dorado fino -->
+  <path d="M512 124 C 650 124 778 156 866 186 C 866 444 848 644 512 912 C 176 644 158 444 158 186 C 246 156 374 124 512 124 Z" fill="none" stroke="#E6C85A" stroke-width="5"/>
+  <!-- campo -->
+  <path d="M512 150 C 640 150 760 182 842 212 C 842 450 826 640 512 896 C 198 640 182 450 182 212 C 264 182 384 150 512 150 Z" fill="url(#campo)"/>
 
-  <!-- casilla de calendario -->
-  <g>
-    <rect x="212" y="236" width="600" height="588" rx="64" fill="#F4F6F2"/>
-    <!-- cabecera -->
-    <path d="M212 300a64 64 0 0 1 64-64h472a64 64 0 0 1 64 64v96H212z" fill="#0F3D2E"/>
-    <!-- anillas -->
-    <rect x="318" y="176" width="52" height="150" rx="26" fill="#B6E388"/>
-    <rect x="654" y="176" width="52" height="150" rx="26" fill="#B6E388"/>
-    <!-- línea de la cabecera -->
-    <rect x="212" y="396" width="600" height="8" fill="#DCE3DA"/>
+  <!-- green con siega -->
+  <g clip-path="url(#clipEscudo)">
+    <ellipse cx="512" cy="640" rx="420" ry="190" fill="url(#siega)"/>
+    <ellipse cx="512" cy="640" rx="420" ry="190" fill="none" stroke="#1F5F42" stroke-width="6"/>
   </g>
-
   <!-- hoyo -->
-  <ellipse cx="512" cy="724" rx="118" ry="30" fill="#DCE8D6"/>
-  <ellipse cx="512" cy="722" rx="56" ry="16" fill="#0F3D2E"/>
-
+  <ellipse cx="512" cy="612" rx="54" ry="18" fill="#0B2E22"/>
+  <ellipse cx="512" cy="608" rx="54" ry="18" fill="#163F2F"/>
   <!-- asta -->
-  <rect x="496" y="430" width="24" height="296" rx="12" fill="#0F3D2E"/>
+  <rect x="502" y="268" width="20" height="344" rx="10" fill="#F4F6F2"/>
+  <circle cx="512" cy="266" r="14" fill="#E6C85A"/>
+  <!-- bandera con pliegue -->
+  <path d="M522 282 C 600 250 668 252 742 288 L 742 420 C 668 384 600 382 522 414 Z" fill="url(#bandera)"/>
+  <path d="M632 262 C 672 262 708 272 742 288 L 742 420 C 708 404 672 394 632 394 Z" fill="#8FC456" opacity="0.55"/>
+  <path d="M522 282 C 600 250 668 252 742 288" fill="none" stroke="#0B2E22" stroke-width="10" stroke-linecap="round"/>
 
-  <!-- bandera -->
-  <path d="M520 442c70-34 134-34 206 2v148c-72-36-136-36-206-2z" fill="url(#flag)"/>
-  <path d="M520 442c70-34 134-34 206 2" fill="none" stroke="#0F3D2E" stroke-width="14" stroke-linecap="round"/>
+  <!-- banda con el nombre -->
+  <path d="M212 686 L 812 686 L 790 776 L 234 776 Z" fill="url(#oroBanda)"/>
+  <path d="M212 686 L 812 686 L 790 776 L 234 776 Z" fill="none" stroke="#7A5C0E" stroke-width="4"/>
+  <text x="512" y="754" text-anchor="middle" font-family="Fraunces, 'Fraunces 72pt', serif" font-weight="700" font-size="76" letter-spacing="10" fill="#0B2E22">FLOG</text>
+  <text x="512" y="818" text-anchor="middle" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-weight="700" font-size="24" letter-spacing="6" fill="#F0D77A">C. VALENCIANA</text>
 </svg>

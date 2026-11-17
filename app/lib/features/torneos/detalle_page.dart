@@ -1,3 +1,4 @@
+import 'package:go_router/go_router.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:provider/provider.dart';
 
@@ -150,11 +151,18 @@ class _Detalle extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 14),
-                if (enlace != null)
+                if (enlace != null && !inscrito)
                   FilledButton.icon(
+                    onPressed: () => context.push('/inscribir/${t.id}'),
+                    icon: const Icon(Icons.how_to_reg_outlined),
+                    label: const Text('Inscribirme'),
+                  ),
+                if (enlace != null && !inscrito) const SizedBox(height: 10),
+                if (enlace != null)
+                  OutlinedButton.icon(
                     onPressed: () => Acciones.abrirEnlace(context, enlace),
                     icon: const Icon(Icons.open_in_new),
-                    label: const Text('Ver ficha e inscripción'),
+                    label: const Text('Ver ficha del torneo'),
                   ),
                 if (enlace != null) const SizedBox(height: 10),
                 OutlinedButton.icon(

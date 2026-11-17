@@ -9,6 +9,7 @@ class Perfil {
     this.nombre = '',
     this.club = '',
     this.licencia = '',
+    this.email = '',
     this.handicap,
     this.handicapActualizado,
   });
@@ -16,14 +17,16 @@ class Perfil {
   final String nombre;
   final String club;
   final String licencia;
+  final String email;
   final double? handicap;
   final String? handicapActualizado; // AAAA-MM-DD de la última consulta/edición
 
-  Perfil copyWith({String? nombre, String? club, String? licencia, double? handicap, String? handicapActualizado, bool borrarHandicap = false}) =>
+  Perfil copyWith({String? nombre, String? club, String? licencia, String? email, double? handicap, String? handicapActualizado, bool borrarHandicap = false}) =>
       Perfil(
         nombre: nombre ?? this.nombre,
         club: club ?? this.club,
         licencia: licencia ?? this.licencia,
+        email: email ?? this.email,
         handicap: borrarHandicap ? null : (handicap ?? this.handicap),
         handicapActualizado: borrarHandicap ? null : (handicapActualizado ?? this.handicapActualizado),
       );
@@ -32,6 +35,7 @@ class Perfil {
         'nombre': nombre,
         'club': club,
         'licencia': licencia,
+        if (email.isNotEmpty) 'email': email,
         if (handicap != null) 'handicap': handicap,
         if (handicapActualizado != null) 'handicap_actualizado': handicapActualizado,
       };
@@ -40,11 +44,15 @@ class Perfil {
         nombre: j['nombre'] as String? ?? '',
         club: j['club'] as String? ?? '',
         licencia: j['licencia'] as String? ?? '',
+        email: j['email'] as String? ?? '',
         handicap: (j['handicap'] as num?)?.toDouble(),
         handicapActualizado: j['handicap_actualizado'] as String?,
       );
 
   bool get vacio => nombre.isEmpty && club.isEmpty && licencia.isEmpty && handicap == null;
+
+  /// Hay datos suficientes para rellenar un formulario de inscripción.
+  bool get listoParaInscribir => licencia.isNotEmpty || nombre.isNotEmpty;
 
   /// Iniciales para el avatar.
   String get iniciales {

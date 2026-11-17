@@ -56,10 +56,20 @@ En GitHub, los secretos se cargan con `gh secret set OPENAI_API_KEY` y
 
 ## App
 
-Flutter (Android primero; iOS cuando haya Xcode). Tres pestañas: **Torneos** (lista por
-meses con buscador y filtros de provincia y tipo), **Calendario** (vista mensual con puntos
-por tipo) y **Avisos** (provincias para recibir push y novedades de la última revisión).
-Cada torneo tiene ficha con enlace de inscripción, "Añadir a mi calendario" y compartir.
+Flutter (Android primero; iOS cuando haya Xcode). Cuatro pestañas: **Hoy** (tu próximo
+torneo, inscripciones que cierran pronto y novedades en tus provincias), **Calendario**
+(vista mensual con marcadores por tipo y anillo en los días con inscripción, buscador y
+filtros, agenda del mes o del día), **Avisos** (provincias, frecuencia diaria o semanal y
+novedades) y **Perfil** (datos, hándicap consultado en el buscador público de la RFEG y
+"Mis torneos"). Cada ficha tiene "Inscribirme", "Me he inscrito", "Añadir a mi calendario"
+y compartir.
+
+**Inscripción asistida**: "Inscribirme" abre la web de inscripción dentro de la app
+(la sesión de cada plataforma se recuerda) y rellena licencia, nombre y email con los
+datos del perfil cuando aparece un formulario; nunca guarda contraseñas. Las competiciones
+de la Federación se inscriben desde su app Mi LV, y la pantalla lo indica. Al terminar,
+"Ya me he inscrito" marca el torneo. No existe ninguna API pública de inscripción, así que
+no se puede inscribir sin pasar por la web o la app de cada organizador.
 
 ```bash
 cd app

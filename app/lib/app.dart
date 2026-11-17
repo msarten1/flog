@@ -8,21 +8,22 @@ import 'core/config.dart';
 import 'core/theme.dart';
 import 'features/avisos/avisos_page.dart';
 import 'features/calendario/calendario_page.dart';
+import 'features/hoy/hoy_page.dart';
+import 'features/inscripcion/inscripcion_page.dart';
 import 'features/perfil/perfil_page.dart';
 import 'features/torneos/detalle_page.dart';
-import 'features/torneos/torneos_page.dart';
 import 'services/push_service.dart';
 
 final _rootKey = GlobalKey<NavigatorState>();
 
 final GoRouter flogRouter = GoRouter(
   navigatorKey: _rootKey,
-  initialLocation: '/torneos',
+  initialLocation: '/hoy',
   routes: [
     StatefulShellRoute.indexedStack(
       builder: (context, state, shell) => _Shell(shell: shell),
       branches: [
-        StatefulShellBranch(routes: [GoRoute(path: '/torneos', builder: (_, _) => const TorneosPage())]),
+        StatefulShellBranch(routes: [GoRoute(path: '/hoy', builder: (_, _) => const HoyPage())]),
         StatefulShellBranch(routes: [GoRoute(path: '/calendario', builder: (_, _) => const CalendarioPage())]),
         StatefulShellBranch(routes: [GoRoute(path: '/avisos', builder: (_, _) => const AvisosPage())]),
         StatefulShellBranch(routes: [GoRoute(path: '/perfil', builder: (_, _) => const PerfilPage())]),
@@ -32,6 +33,11 @@ final GoRouter flogRouter = GoRouter(
       path: '/torneo/:id',
       parentNavigatorKey: _rootKey,
       builder: (_, state) => DetallePage(id: state.pathParameters['id']!),
+    ),
+    GoRoute(
+      path: '/inscribir/:id',
+      parentNavigatorKey: _rootKey,
+      builder: (_, state) => InscripcionPage(id: state.pathParameters['id']!),
     ),
   ],
 );
@@ -91,7 +97,7 @@ class _Shell extends StatelessWidget {
         selectedIndex: shell.currentIndex,
         onDestinationSelected: (i) => shell.goBranch(i, initialLocation: i == shell.currentIndex),
         destinations: const [
-          NavigationDestination(icon: Icon(Icons.sports_golf_outlined), selectedIcon: Icon(Icons.sports_golf), label: 'Torneos'),
+          NavigationDestination(icon: Icon(Icons.home_outlined), selectedIcon: Icon(Icons.home), label: 'Hoy'),
           NavigationDestination(icon: Icon(Icons.calendar_month_outlined), selectedIcon: Icon(Icons.calendar_month), label: 'Calendario'),
           NavigationDestination(icon: Icon(Icons.notifications_outlined), selectedIcon: Icon(Icons.notifications), label: 'Avisos'),
           NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Perfil'),

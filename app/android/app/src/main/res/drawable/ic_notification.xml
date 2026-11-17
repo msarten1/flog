@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Icono de notificación (silueta blanca): casilla de calendario con bandera -->
+<!-- Icono de notificación (silueta blanca): escudo con bandera -->
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="24dp"
     android:height="24dp"
@@ -7,5 +7,6 @@
     android:viewportHeight="24">
     <path
         android:fillColor="#FFFFFFFF"
-        android:pathData="M5,4.5h14a2,2 0 0 1 2,2v12.5a2,2 0 0 1 -2,2H5a2,2 0 0 1 -2,-2V6.5a2,2 0 0 1 2,-2zM5,8.5v10.5h14V8.5zM7.5,3h1.5v3H7.5zM15,3h1.5v3H15zM11.2,10h1.3v7.2h-1.3zM12.5,10.2c1.6,-0.7 3.1,-0.7 4.8,0.1v3.3c-1.7,-0.8 -3.2,-0.8 -4.8,-0.1z" />
+        android:fillType="evenOdd"
+        android:pathData="M12,2C9.2,2 6.4,2.6 3.5,3.5V8c0,5.5 3.2,10 8.5,14 5.3,-4 8.5,-8.5 8.5,-14V3.5C17.6,2.6 14.8,2 12,2zM12,4.1c2.1,0 4.2,0.4 6.4,1V8c0,4.3,-2.3,8,-6.4,11.4C7.9,16 5.6,12.3 5.6,8V5.1C7.8,4.5 9.9,4.1 12,4.1zM11.1,7h1.2v8.2h-1.2zM12.3,7.3c1.4,-0.6 2.7,-0.6 4.2,0.1v3c-1.5,-0.7,-2.8,-0.7,-4.2,-0.1z" />
 </vector>
