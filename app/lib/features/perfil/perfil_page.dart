@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:go_router/go_router.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:provider/provider.dart';
 
@@ -37,6 +38,11 @@ class PerfilPage extends StatelessWidget {
             tooltip: 'Editar datos',
             icon: const Icon(Icons.edit_outlined),
             onPressed: () => _editar(context, ps),
+          ),
+          IconButton(
+            tooltip: 'Configuración',
+            icon: const Icon(Icons.settings_outlined),
+            onPressed: () => context.push('/configuracion'),
           ),
         ],
       ),

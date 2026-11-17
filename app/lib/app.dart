@@ -6,8 +6,8 @@ import 'package:provider/provider.dart';
 
 import 'core/config.dart';
 import 'core/theme.dart';
-import 'features/avisos/avisos_page.dart';
 import 'features/calendario/calendario_page.dart';
+import 'features/configuracion/configuracion_page.dart';
 import 'features/hoy/hoy_page.dart';
 import 'features/inscripcion/inscripcion_page.dart';
 import 'features/perfil/perfil_page.dart';
@@ -25,7 +25,6 @@ final GoRouter flogRouter = GoRouter(
       branches: [
         StatefulShellBranch(routes: [GoRoute(path: '/hoy', builder: (_, _) => const HoyPage())]),
         StatefulShellBranch(routes: [GoRoute(path: '/calendario', builder: (_, _) => const CalendarioPage())]),
-        StatefulShellBranch(routes: [GoRoute(path: '/avisos', builder: (_, _) => const AvisosPage())]),
         StatefulShellBranch(routes: [GoRoute(path: '/perfil', builder: (_, _) => const PerfilPage())]),
       ],
     ),
@@ -33,6 +32,11 @@ final GoRouter flogRouter = GoRouter(
       path: '/torneo/:id',
       parentNavigatorKey: _rootKey,
       builder: (_, state) => DetallePage(id: state.pathParameters['id']!),
+    ),
+    GoRoute(
+      path: '/configuracion',
+      parentNavigatorKey: _rootKey,
+      builder: (_, _) => const ConfiguracionPage(),
     ),
     GoRoute(
       path: '/inscribir/:id',
@@ -55,12 +59,12 @@ class _FlogAppState extends State<FlogApp> {
   @override
   void initState() {
     super.initState();
-    // Al tocar una notificación: abrir el torneo o la pestaña de avisos.
+    // Al tocar una notificación: abrir el torneo o la pantalla de inicio.
     _sub = context.read<PushService>().alAbrir.listen((id) {
       if (id != null && id.isNotEmpty) {
         flogRouter.push('/torneo/$id');
       } else {
-        flogRouter.go('/avisos');
+        flogRouter.go('/hoy');
       }
     });
   }
@@ -99,7 +103,6 @@ class _Shell extends StatelessWidget {
         destinations: const [
           NavigationDestination(icon: Icon(Icons.home_outlined), selectedIcon: Icon(Icons.home), label: 'Hoy'),
           NavigationDestination(icon: Icon(Icons.calendar_month_outlined), selectedIcon: Icon(Icons.calendar_month), label: 'Calendario'),
-          NavigationDestination(icon: Icon(Icons.notifications_outlined), selectedIcon: Icon(Icons.notifications), label: 'Avisos'),
           NavigationDestination(icon: Icon(Icons.person_outline), selectedIcon: Icon(Icons.person), label: 'Perfil'),
         ],
       ),

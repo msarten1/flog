@@ -99,6 +99,19 @@ class HoyPage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 16),
                 child: _AccesoCalendario(semana: semana.length, total: s.vigentes.length),
               ),
+              if (provincias.isEmpty)
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
+                  child: Card(
+                    child: ListTile(
+                      leading: const Icon(Icons.notifications_active_outlined, color: FlogColors.verde700),
+                      title: const Text('Activa los avisos'),
+                      subtitle: const Text('Elige tus provincias y te avisaremos de los torneos nuevos.'),
+                      trailing: const Icon(Icons.chevron_right),
+                      onTap: () => context.push('/configuracion'),
+                    ),
+                  ),
+                ),
               if (p.vacio)
                 Padding(
                   padding: const EdgeInsets.fromLTRB(16, 12, 16, 0),
@@ -152,9 +165,15 @@ class _Cabecera extends StatelessWidget {
           ),
           if (cargando)
             const Padding(
-              padding: EdgeInsets.only(right: 12),
+              padding: EdgeInsets.only(right: 4),
               child: SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2)),
             ),
+          IconButton(
+            tooltip: 'Configuración',
+            icon: Icon(Icons.settings_outlined, color: tokens.textoSuave),
+            onPressed: () => context.push('/configuracion'),
+          ),
+          const SizedBox(width: 4),
           InkWell(
             onTap: () => context.go('/perfil'),
             borderRadius: BorderRadius.circular(999),

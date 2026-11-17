@@ -22,13 +22,13 @@ Estructura de `lib/`:
 
 ```
 main.dart                 arranque: Provider, Firebase (si está configurado), locale
-app.dart                  go_router con NavigationBar (Hoy · Calendario · Avisos · Perfil), /torneo/:id y /inscribir/:id
+app.dart                  go_router con NavigationBar (Hoy · Calendario · Perfil), /configuracion, /torneo/:id y /inscribir/:id
 core/                     config (URLs, temas FCM), tema (paleta Flog), fechas en español
 models/                   Torneo, Catalogo, Cambios (espejo de data/*.json)
 services/                 TorneosRepository (caché + ETag), PushService (FCM + locales), Acciones,
                           RfegService (hándicap público), AutofillJs (relleno de formularios)
 state/                    TorneosState (filtros, novedades, consultas de Hoy), PerfilState (datos e inscritos)
-features/                 pantallas: hoy, calendario, torneos/detalle, inscripcion (WebView asistida), avisos, perfil
+features/                 pantallas: hoy, calendario, torneos/detalle, inscripcion (WebView asistida), configuracion, perfil
 widgets/                  fila de agenda, lista, panel de filtros, etiquetas, estados vacíos
 ```
 
@@ -47,10 +47,10 @@ para el primer arranque: actualízala con `cp ../data/torneos.json assets/data/`
 4. En Firebase → Configuración del proyecto → Cuentas de servicio → generar clave privada.
    Guarda el JSON como secreto `FCM_SERVICE_ACCOUNT_JSON` del repositorio:
    `gh secret set FCM_SERVICE_ACCOUNT_JSON < clave.json`.
-5. Prueba: activa una provincia en la pestaña Avisos y ejecuta en `scraper/`
+5. Prueba: activa una provincia en Configuración y ejecuta en `scraper/`
    `FCM_SERVICE_ACCOUNT_FILE=clave.json .venv/bin/python -m flog_scraper notify --test --topic prov-alicante`.
 
-Sin estos pasos la app compila y funciona; la pestaña Avisos guarda las preferencias
+Sin estos pasos la app compila y funciona; Configuración guarda las preferencias
 y avisa de que el push llegará en la siguiente versión.
 
 ## Icono y splash

@@ -49,19 +49,19 @@ Variables de entorno:
 Avisos push: cada día se notifica a los temas `prov-<provincia>` (nuevos y cambios del día);
 los lunes se envía un resumen de 7 días a `prov-<provincia>-semanal`; y a ambos, una sola vez
 por torneo, cuando una inscripción cierra en dos días o menos. En la app cada persona elige
-"Cada día" o "Resumen semanal" en la pestaña Avisos. `notify --semanal` fuerza el resumen.
+"Cada día" o "Resumen semanal" en Configuración. `notify --semanal` fuerza el resumen.
 
 En GitHub, los secretos se cargan con `gh secret set OPENAI_API_KEY` y
 `gh secret set FCM_SERVICE_ACCOUNT_JSON < service-account.json`.
 
 ## App
 
-Flutter (Android primero; iOS cuando haya Xcode). Cuatro pestañas: **Hoy** (tu próximo
+Flutter (Android primero; iOS cuando haya Xcode). Tres pestañas: **Hoy** (tu próximo
 torneo, inscripciones que cierran pronto y novedades en tus provincias), **Calendario**
 (vista mensual con marcadores por tipo y anillo en los días con inscripción, buscador y
-filtros, agenda del mes o del día), **Avisos** (provincias, frecuencia diaria o semanal y
-novedades) y **Perfil** (datos, hándicap consultado en el buscador público de la RFEG y
-"Mis torneos"). Cada ficha tiene "Inscribirme", "Me he inscrito", "Añadir a mi calendario"
+filtros, agenda del mes o del día) y **Perfil** (datos, hándicap consultado en el buscador
+público de la RFEG y "Mis torneos"). La **Configuración** (engranaje) tiene los avisos
+(provincias y frecuencia diaria o semanal), las fuentes y la privacidad. Cada ficha tiene "Inscribirme", "Me he inscrito", "Añadir a mi calendario"
 y compartir.
 
 **Inscripción asistida**: "Inscribirme" abre la web de inscripción dentro de la app

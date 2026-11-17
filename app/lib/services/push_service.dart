@@ -207,26 +207,6 @@ class PushService extends ChangeNotifier {
     await _sincronizarTemas();
   }
 
-  /// Notificación local de prueba.
-  Future<void> probar() async {
-    if (!_permiso) await pedirPermiso();
-    await _local.show(
-      id: 1,
-      title: 'Flog · prueba',
-      body: 'Así te avisaremos cuando se anuncien torneos nuevos.',
-      notificationDetails: const NotificationDetails(
-        android: AndroidNotificationDetails(
-          FlogConfig.canalNotificaciones,
-          'Torneos nuevos y cambios',
-          importance: Importance.high,
-          priority: Priority.high,
-          icon: 'ic_notification',
-        ),
-      ),
-      payload: '',
-    );
-  }
-
   @override
   void dispose() {
     _abrir.close();
