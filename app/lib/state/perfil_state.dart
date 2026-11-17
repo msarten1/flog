@@ -66,14 +66,19 @@ class Perfil {
 class PerfilState extends ChangeNotifier {
   static const _kPerfil = 'perfil';
   static const _kInscritos = 'inscritos';
+  static const _kBienvenida = 'bienvenida_hecha';
 
   Perfil _perfil = const Perfil();
   Set<String> _inscritos = {};
   bool _cargado = false;
+  bool _bienvenidaHecha = false;
 
   Perfil get perfil => _perfil;
   Set<String> get inscritos => Set.unmodifiable(_inscritos);
   bool get cargado => _cargado;
+
+  /// El arranque guiado ya se completó (o se saltó).
+  bool get bienvenidaHecha => _bienvenidaHecha;
 
   bool estaInscrito(String id) => _inscritos.contains(id);
 
@@ -88,6 +93,7 @@ class PerfilState extends ChangeNotifier {
       }
     }
     _inscritos = (prefs.getStringList(_kInscritos) ?? const []).toSet();
+    _bienvenidaHecha = prefs.getBool(_kBienvenida) ?? false;
     _cargado = true;
     notifyListeners();
   }
@@ -111,4 +117,11 @@ class PerfilState extends ChangeNotifier {
   }
 
   Future<void> toggleInscrito(String id) => setInscrito(id, !_inscritos.contains(id));
+
+  Future<void> marcarBienvenida() async {
+    _bienvenidaHecha = true;
+    notifyListeners();
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_kBienvenida, true);
+  }
 }

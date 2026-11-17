@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 
 import 'core/config.dart';
 import 'core/theme.dart';
+import 'features/bienvenida/bienvenida_page.dart';
 import 'features/calendario/calendario_page.dart';
 import 'features/configuracion/configuracion_page.dart';
 import 'features/hoy/hoy_page.dart';
@@ -13,13 +14,25 @@ import 'features/inscripcion/inscripcion_page.dart';
 import 'features/perfil/perfil_page.dart';
 import 'features/torneos/detalle_page.dart';
 import 'services/push_service.dart';
+import 'state/perfil_state.dart';
 
 final _rootKey = GlobalKey<NavigatorState>();
 
-final GoRouter flogRouter = GoRouter(
+late GoRouter flogRouter;
+
+GoRouter crearRouter(PerfilState perfil) => GoRouter(
   navigatorKey: _rootKey,
   initialLocation: '/hoy',
+  refreshListenable: perfil,
+  redirect: (_, state) {
+    if (!perfil.cargado) return null;
+    final enBienvenida = state.matchedLocation == '/bienvenida';
+    if (!perfil.bienvenidaHecha && !enBienvenida) return '/bienvenida';
+    if (perfil.bienvenidaHecha && enBienvenida) return '/hoy';
+    return null;
+  },
   routes: [
+    GoRoute(path: '/bienvenida', parentNavigatorKey: _rootKey, builder: (_, _) => const BienvenidaPage()),
     StatefulShellRoute.indexedStack(
       builder: (context, state, shell) => _Shell(shell: shell),
       branches: [
@@ -59,6 +72,7 @@ class _FlogAppState extends State<FlogApp> {
   @override
   void initState() {
     super.initState();
+    flogRouter = crearRouter(context.read<PerfilState>());
     // Al tocar una notificación: abrir el torneo o la pantalla de inicio.
     _sub = context.read<PushService>().alAbrir.listen((id) {
       if (id != null && id.isNotEmpty) {
