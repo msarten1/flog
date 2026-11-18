@@ -29,6 +29,12 @@
   "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford, sin indicación de ser competición interna.",
   "modelo": "gpt-4.1-mini"
  },
+ "tornegolf-10112": {
+  "incluir": false,
+  "tipo": "Club",
+  "motivo": "Competición semanal o interna de club, no es un torneo abierto ni especial.",
+  "modelo": "gpt-4.1-mini"
+ },
  "tornegolf-9064": {
   "incluir": true,
   "tipo": "Club",

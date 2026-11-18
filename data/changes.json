@@ -1,68 +1,52 @@
 {
- "fecha": "2026-11-17",
+ "fecha": "2026-11-18",
  "nuevos": [
   {
-   "id": "tornegolf-10078",
-   "fecha": "2026-11-17",
-   "nombre": "Torneo Grupo Bélgica-España Noviembre 2026",
-   "club": "La Sella Golf",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10079",
-   "fecha": "2026-11-17",
-   "nombre": "Green Jackets 17-11-2026",
-   "club": "Font del Llop",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10083",
+   "id": "tornegolf-10106",
    "fecha": "2026-11-18",
-   "nombre": "Cbgs Texas Scramble",
-   "club": "Bonalba",
+   "nombre": "Torneo Denis Thibon",
+   "club": "Vistabella Golf",
    "provincia": "Alicante",
    "tipo": "Club"
   },
   {
-   "id": "tornegolf-10087",
-   "fecha": "2026-11-19",
-   "nombre": "Las Colinas Spain Day 1",
-   "club": "Las Colinas Golf & Country Club",
+   "id": "tornegolf-10123",
+   "fecha": "2026-11-29",
+   "nombre": "Torneo Iniciación - 5ªcategoría",
+   "club": "Panorámica Golf",
+   "provincia": "Castellón",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10124",
+   "fecha": "2026-12-05",
+   "nombre": "17º Torneo Solidario de Navidad Rotary Club",
+   "club": "La Marquesa",
    "provincia": "Alicante",
    "tipo": "Club"
   },
   {
-   "id": "tornegolf-10089",
-   "fecha": "2026-11-20",
-   "nombre": "Las Colinas Spain -day 2",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10092",
-   "fecha": "2026-11-21",
-   "nombre": "Las Colinas Spain -day 3",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10096",
+   "id": "tornegolf-10127",
    "fecha": "2026-12-12",
-   "nombre": "Final VII Circuito La Finca Resort",
-   "club": "Finca Algorfa",
+   "nombre": "XII Torneo de Navidad EGE",
+   "club": "Escuela de Golf de Elche",
    "provincia": "Alicante",
-   "tipo": "Circuito"
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9994",
+   "fecha": "2026-12-12",
+   "nombre": "Torneo Navidad",
+   "club": "Real Montealegre",
+   "provincia": "Valencia",
+   "tipo": "Club"
   }
  ],
  "cambios": [
   {
-   "id": "tornegolf-9064",
-   "fecha": "2026-11-17",
-   "nombre": "9&tapas",
+   "id": "tornegolf-10087",
+   "fecha": "2026-11-19",
+   "nombre": "Las Colinas Spain Day 1",
    "club": "Las Colinas Golf & Country Club",
    "provincia": "Alicante",
    "tipo": "Club",
@@ -72,35 +56,10 @@
  "eliminados": [],
  "proximos_14_dias": [
   {
-   "id": "fgcv-liguilla-femenina-10",
-   "fecha": "2026-11-17",
-   "nombre": "IV Liguilla Interclubs Femenina 9/9",
-   "club": "Mediterráneo Golf",
-   "provincia": "Castellón",
-   "tipo": "Federación"
-  },
-  {
-   "id": "tornegolf-10078",
-   "fecha": "2026-11-17",
-   "nombre": "Torneo Grupo Bélgica-España Noviembre 2026",
-   "club": "La Sella Golf",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-9064",
-   "fecha": "2026-11-17",
-   "nombre": "9&tapas",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "cambio": "Inscripción abierta"
-  },
-  {
-   "id": "tornegolf-10079",
-   "fecha": "2026-11-17",
-   "nombre": "Green Jackets 17-11-2026",
-   "club": "Font del Llop",
+   "id": "tornegolf-10106",
+   "fecha": "2026-11-18",
+   "nombre": "Torneo Denis Thibon",
+   "club": "Vistabella Golf",
    "provincia": "Alicante",
    "tipo": "Club"
   },
@@ -126,7 +85,8 @@
    "nombre": "Las Colinas Spain Day 1",
    "club": "Las Colinas Golf & Country Club",
    "provincia": "Alicante",
-   "tipo": "Club"
+   "tipo": "Club",
+   "cambio": "Inscripción abierta"
   },
   {
    "id": "msc-cruceros-manises",
@@ -265,11 +225,27 @@
    "tipo": "Club"
   },
   {
+   "id": "tornegolf-10123",
+   "fecha": "2026-11-29",
+   "nombre": "Torneo Iniciación - 5ªcategoría",
+   "club": "Panorámica Golf",
+   "provincia": "Castellón",
+   "tipo": "Club"
+  },
+  {
    "id": "fgcv-liguilla-senior-vlccs-9",
    "fecha": "2026-12-01",
    "nombre": "Liguilla Senior Masculina Zona VLC/CS 1DIV 2DIV 9/9",
    "club": "El Bosque",
    "provincia": "Valencia",
+   "tipo": "Federación"
+  },
+  {
+   "id": "fgcv-liguilla-interclubs-fem-4",
+   "fecha": "2026-12-02",
+   "nombre": "Rec IV Liguilla Interclubs Femenina 4/9",
+   "club": "Meliá Villaitana Golf",
+   "provincia": "Alicante",
    "tipo": "Federación"
   }
  ],

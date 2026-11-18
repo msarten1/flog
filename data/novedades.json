@@ -1,6 +1,63 @@
 {
  "dias": [
   {
+   "fecha": "2026-11-18",
+   "nuevos": [
+    {
+     "id": "tornegolf-10106",
+     "fecha": "2026-11-18",
+     "nombre": "Torneo Denis Thibon",
+     "club": "Vistabella Golf",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10123",
+     "fecha": "2026-11-29",
+     "nombre": "Torneo Iniciación - 5ªcategoría",
+     "club": "Panorámica Golf",
+     "provincia": "Castellón",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10124",
+     "fecha": "2026-12-05",
+     "nombre": "17º Torneo Solidario de Navidad Rotary Club",
+     "club": "La Marquesa",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10127",
+     "fecha": "2026-12-12",
+     "nombre": "XII Torneo de Navidad EGE",
+     "club": "Escuela de Golf de Elche",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-9994",
+     "fecha": "2026-12-12",
+     "nombre": "Torneo Navidad",
+     "club": "Real Montealegre",
+     "provincia": "Valencia",
+     "tipo": "Club"
+    }
+   ],
+   "cambios": [
+    {
+     "id": "tornegolf-10087",
+     "fecha": "2026-11-19",
+     "nombre": "Las Colinas Spain Day 1",
+     "club": "Las Colinas Golf & Country Club",
+     "provincia": "Alicante",
+     "tipo": "Club",
+     "cambio": "Inscripción abierta"
+    }
+   ],
+   "eliminados": []
+  },
+  {
    "fecha": "2026-11-17",
    "nuevos": [
     {
