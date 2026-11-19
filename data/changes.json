@@ -1,76 +1,36 @@
 {
- "fecha": "2026-11-18",
+ "fecha": "2026-11-19",
  "nuevos": [
   {
-   "id": "tornegolf-10106",
-   "fecha": "2026-11-18",
-   "nombre": "Torneo Denis Thibon",
-   "club": "Vistabella Golf",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10123",
-   "fecha": "2026-11-29",
-   "nombre": "Torneo Iniciación - 5ªcategoría",
-   "club": "Panorámica Golf",
+   "id": "mediterraneo-20261220-torneo-navidad",
+   "fecha": "2026-12-20",
+   "nombre": "Torneo Navidad",
+   "club": "Mediterráneo Golf",
    "provincia": "Castellón",
    "tipo": "Club"
   },
   {
-   "id": "tornegolf-10124",
-   "fecha": "2026-12-05",
-   "nombre": "17º Torneo Solidario de Navidad Rotary Club",
-   "club": "La Marquesa",
+   "id": "tornegolf-10132",
+   "fecha": "2026-11-19",
+   "nombre": "Green Jackets",
+   "club": "Font del Llop",
    "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10127",
-   "fecha": "2026-12-12",
-   "nombre": "XII Torneo de Navidad EGE",
-   "club": "Escuela de Golf de Elche",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-9994",
-   "fecha": "2026-12-12",
-   "nombre": "Torneo Navidad",
-   "club": "Real Montealegre",
-   "provincia": "Valencia",
    "tipo": "Club"
   }
  ],
  "cambios": [
   {
-   "id": "tornegolf-10087",
-   "fecha": "2026-11-19",
-   "nombre": "Las Colinas Spain Day 1",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "cambio": "Inscripción abierta"
+   "id": "mediterraneo-navidad",
+   "fecha": "2026-12-11",
+   "nombre": "Mediterraneo Winter Series WAGR",
+   "club": "Mediterráneo Golf",
+   "provincia": "Castellón",
+   "tipo": "Circuito",
+   "cambio": "Cambio de fecha (antes 20 dic)"
   }
  ],
  "eliminados": [],
  "proximos_14_dias": [
-  {
-   "id": "tornegolf-10106",
-   "fecha": "2026-11-18",
-   "nombre": "Torneo Denis Thibon",
-   "club": "Vistabella Golf",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10083",
-   "fecha": "2026-11-18",
-   "nombre": "Cbgs Texas Scramble",
-   "club": "Bonalba",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
   {
    "id": "tornegolf-10037",
    "fecha": "2026-11-19",
@@ -80,13 +40,20 @@
    "tipo": "Circuito"
   },
   {
+   "id": "tornegolf-10132",
+   "fecha": "2026-11-19",
+   "nombre": "Green Jackets",
+   "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
    "id": "tornegolf-10087",
    "fecha": "2026-11-19",
    "nombre": "Las Colinas Spain Day 1",
    "club": "Las Colinas Golf & Country Club",
    "provincia": "Alicante",
-   "tipo": "Club",
-   "cambio": "Inscripción abierta"
+   "tipo": "Club"
   },
   {
    "id": "msc-cruceros-manises",

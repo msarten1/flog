@@ -1,6 +1,39 @@
 {
  "dias": [
   {
+   "fecha": "2026-11-19",
+   "nuevos": [
+    {
+     "id": "mediterraneo-20261220-torneo-navidad",
+     "fecha": "2026-12-20",
+     "nombre": "Torneo Navidad",
+     "club": "Mediterráneo Golf",
+     "provincia": "Castellón",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10132",
+     "fecha": "2026-11-19",
+     "nombre": "Green Jackets",
+     "club": "Font del Llop",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    }
+   ],
+   "cambios": [
+    {
+     "id": "mediterraneo-navidad",
+     "fecha": "2026-12-11",
+     "nombre": "Mediterraneo Winter Series WAGR",
+     "club": "Mediterráneo Golf",
+     "provincia": "Castellón",
+     "tipo": "Circuito",
+     "cambio": "Cambio de fecha (antes 20 dic)"
+    }
+   ],
+   "eliminados": []
+  },
+  {
    "fecha": "2026-11-18",
    "nuevos": [
     {

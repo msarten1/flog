@@ -1,4 +1,10 @@
 {
+ "mediterraneo-20261211-mediterraneo-winter-series-wag": {
+  "incluir": true,
+  "tipo": "Circuito",
+  "motivo": "Prueba del circuito amateur Mediterráneo, abierto a jugadores amateurs.",
+  "modelo": "gpt-4.1-mini"
+ },
  "tornegolf-10017": {
   "incluir": true,
   "tipo": "Club",
@@ -33,6 +39,12 @@
   "incluir": false,
   "tipo": "Club",
   "motivo": "Competición semanal o interna de club, no es un torneo abierto ni especial.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-10132": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford.",
   "modelo": "gpt-4.1-mini"
  },
  "tornegolf-9064": {

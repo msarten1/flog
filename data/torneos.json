@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18",
+ "actualizado": "2026-11-19",
  "primera": "2026-11-08",
  "nota": "Torneos amateur de la Comunitat Valenciana (Alicante, Valencia, Castellón). Se excluyen competiciones profesionales, juveniles y las ligas internas de sociedades/socios.",
  "fuentes": [
@@ -67,37 +67,8 @@
    "precio": "40 €",
    "estado_inscripcion": "cerrada",
    "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2717",
-   "enlace_inscripcion": "https://open.imaster.golf/es/ccmediterraneo/torneos/",
    "fuente": "golfcv",
    "anadido": "2026-11-08"
-  },
-  {
-   "id": "tornegolf-10083",
-   "fecha": "2026-11-18",
-   "nombre": "Cbgs Texas Scramble",
-   "club": "Bonalba",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Scramble Stroke Play",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-18-noviembre-2026-cbgs-texas-scramble-bonalba--10083",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afad02123d5370df087b816/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-17"
-  },
-  {
-   "id": "tornegolf-10106",
-   "fecha": "2026-11-18",
-   "nombre": "Torneo Denis Thibon",
-   "club": "Vistabella Golf",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-18-noviembre-2026-torneo-denis-thibon-vistabella-vistabella--10106",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afc6844669bd90e39ccfb86/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-18"
   },
   {
    "id": "tornegolf-10037",
@@ -114,6 +85,20 @@
    "anadido": "2026-11-16"
   },
   {
+   "id": "tornegolf-10132",
+   "fecha": "2026-11-19",
+   "nombre": "Green Jackets",
+   "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-19-noviembre-2026-green-jackets-font-del-llop--10132",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afd94d2098fd9d9a2c7331f/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-19"
+  },
+  {
    "id": "tornegolf-10087",
    "fecha": "2026-11-19",
    "nombre": "Las Colinas Spain Day 1",
@@ -125,8 +110,7 @@
    "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-19-noviembre-2026-las-colinas-spain-day-1-las-colinas-golf-country-club--10087",
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6afb05b623d5370df0220f0c/summary",
    "fuente": "tornegolf",
-   "anadido": "2026-11-17",
-   "cambio": "Inscripción abierta"
+   "anadido": "2026-11-17"
   },
   {
    "id": "tornegolf-10089",
@@ -580,6 +564,19 @@
    "anadido": "2026-11-16"
   },
   {
+   "id": "mediterraneo-navidad",
+   "fecha": "2026-12-11",
+   "nombre": "Mediterraneo Winter Series WAGR",
+   "club": "Mediterráneo Golf",
+   "provincia": "Castellón",
+   "tipo": "Circuito",
+   "enlace": "https://open.imaster.golf/es/ccmediterraneo/torneos/",
+   "enlace_inscripcion": "https://open.imaster.golf/es/ccmediterraneo/torneos/",
+   "fuente": "mediterraneo",
+   "anadido": "2026-11-08",
+   "cambio": "Cambio de fecha (antes 20 dic)"
+  },
+  {
    "id": "tornegolf-10096",
    "fecha": "2026-12-12",
    "nombre": "Final VII Circuito La Finca Resort",
@@ -729,7 +726,7 @@
    "anadido": "2026-11-08"
   },
   {
-   "id": "mediterraneo-navidad",
+   "id": "mediterraneo-20261220-torneo-navidad",
    "fecha": "2026-12-20",
    "nombre": "Torneo Navidad",
    "club": "Mediterráneo Golf",
@@ -738,7 +735,7 @@
    "enlace": "https://open.imaster.golf/es/ccmediterraneo/torneos/",
    "enlace_inscripcion": "https://open.imaster.golf/es/ccmediterraneo/torneos/",
    "fuente": "mediterraneo",
-   "anadido": "2026-11-08"
+   "anadido": "2026-11-19"
   },
   {
    "id": "golfcv-2706",
