@@ -1,6 +1,21 @@
 {
  "dias": [
   {
+   "fecha": "2026-11-20",
+   "nuevos": [
+    {
+     "id": "tornegolf-10175",
+     "fecha": "2026-11-20",
+     "nombre": "Wilkinson Yellow Plate 20/11",
+     "club": "Font del Llop",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    }
+   ],
+   "cambios": [],
+   "eliminados": []
+  },
+  {
    "fecha": "2026-11-19",
    "nuevos": [
     {

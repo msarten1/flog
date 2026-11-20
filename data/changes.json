@@ -1,60 +1,18 @@
 {
- "fecha": "2026-11-19",
+ "fecha": "2026-11-20",
  "nuevos": [
   {
-   "id": "mediterraneo-20261220-torneo-navidad",
-   "fecha": "2026-12-20",
-   "nombre": "Torneo Navidad",
-   "club": "Mediterráneo Golf",
-   "provincia": "Castellón",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10132",
-   "fecha": "2026-11-19",
-   "nombre": "Green Jackets",
+   "id": "tornegolf-10175",
+   "fecha": "2026-11-20",
+   "nombre": "Wilkinson Yellow Plate 20/11",
    "club": "Font del Llop",
    "provincia": "Alicante",
    "tipo": "Club"
   }
  ],
- "cambios": [
-  {
-   "id": "mediterraneo-navidad",
-   "fecha": "2026-12-11",
-   "nombre": "Mediterraneo Winter Series WAGR",
-   "club": "Mediterráneo Golf",
-   "provincia": "Castellón",
-   "tipo": "Circuito",
-   "cambio": "Cambio de fecha (antes 20 dic)"
-  }
- ],
+ "cambios": [],
  "eliminados": [],
  "proximos_14_dias": [
-  {
-   "id": "tornegolf-10037",
-   "fecha": "2026-11-19",
-   "nombre": "Final XIV Circuito por Equipos AESGOLF C.V.",
-   "club": "El Plantío",
-   "provincia": "Alicante",
-   "tipo": "Circuito"
-  },
-  {
-   "id": "tornegolf-10132",
-   "fecha": "2026-11-19",
-   "nombre": "Green Jackets",
-   "club": "Font del Llop",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10087",
-   "fecha": "2026-11-19",
-   "nombre": "Las Colinas Spain Day 1",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
   {
    "id": "msc-cruceros-manises",
    "fecha": "2026-11-20",
@@ -68,6 +26,14 @@
    "fecha": "2026-11-20",
    "nombre": "Las Colinas Spain -day 2",
    "club": "Las Colinas Golf & Country Club",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10175",
+   "fecha": "2026-11-20",
+   "nombre": "Wilkinson Yellow Plate 20/11",
+   "club": "Font del Llop",
    "provincia": "Alicante",
    "tipo": "Club"
   },

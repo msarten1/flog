@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19",
+ "actualizado": "2026-11-20",
  "primera": "2026-11-08",
  "nota": "Torneos amateur de la Comunitat Valenciana (Alicante, Valencia, Castellón). Se excluyen competiciones profesionales, juveniles y las ligas internas de sociedades/socios.",
  "fuentes": [
@@ -71,48 +71,6 @@
    "anadido": "2026-11-08"
   },
   {
-   "id": "tornegolf-10037",
-   "fecha": "2026-11-19",
-   "nombre": "Final XIV Circuito por Equipos AESGOLF C.V.",
-   "club": "El Plantío",
-   "provincia": "Alicante",
-   "tipo": "Circuito",
-   "modalidad": "Fourball Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-19-noviembre-2026-final-xiv-circuito-por-equipos-el-plantio-el-plantio--10037",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6af98632440203a820598be1/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-16"
-  },
-  {
-   "id": "tornegolf-10132",
-   "fecha": "2026-11-19",
-   "nombre": "Green Jackets",
-   "club": "Font del Llop",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-19-noviembre-2026-green-jackets-font-del-llop--10132",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afd94d2098fd9d9a2c7331f/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-19"
-  },
-  {
-   "id": "tornegolf-10087",
-   "fecha": "2026-11-19",
-   "nombre": "Las Colinas Spain Day 1",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "abierta",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-19-noviembre-2026-las-colinas-spain-day-1-las-colinas-golf-country-club--10087",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afb05b623d5370df0220f0c/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-17"
-  },
-  {
    "id": "tornegolf-10089",
    "fecha": "2026-11-20",
    "nombre": "Las Colinas Spain -day 2",
@@ -125,6 +83,20 @@
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6afb66eb5445bc10293787b0/summary",
    "fuente": "tornegolf",
    "anadido": "2026-11-17"
+  },
+  {
+   "id": "tornegolf-10175",
+   "fecha": "2026-11-20",
+   "nombre": "Wilkinson Yellow Plate 20/11",
+   "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-20-noviembre-2026-wilkinson-yellow-plate-2011-font-del-llop--10175",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afee63e53aeeeb7e5ce75b6/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-20"
   },
   {
    "id": "msc-cruceros-manises",
@@ -573,8 +545,7 @@
    "enlace": "https://open.imaster.golf/es/ccmediterraneo/torneos/",
    "enlace_inscripcion": "https://open.imaster.golf/es/ccmediterraneo/torneos/",
    "fuente": "mediterraneo",
-   "anadido": "2026-11-08",
-   "cambio": "Cambio de fecha (antes 20 dic)"
+   "anadido": "2026-11-08"
   },
   {
    "id": "tornegolf-10096",
