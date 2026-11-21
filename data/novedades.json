@@ -1,6 +1,63 @@
 {
  "dias": [
   {
+   "fecha": "2026-11-21",
+   "nuevos": [
+    {
+     "id": "tornegolf-10199",
+     "fecha": "2026-11-21",
+     "nombre": "XXXIV Edición Circuito \"CLUB de GOLF VALLE de las UVAS\"",
+     "club": "La Marquesa",
+     "provincia": "Alicante",
+     "tipo": "Circuito"
+    },
+    {
+     "id": "tornegolf-10203",
+     "fecha": "2026-11-21",
+     "nombre": "Torneo Iniciate",
+     "club": "El Plantío",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10205",
+     "fecha": "2026-11-22",
+     "nombre": "Torneo Mizuno-Carser 2026",
+     "club": "La Sella Golf",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10204",
+     "fecha": "2026-11-22",
+     "nombre": "Kikuninus",
+     "club": "Oliva Nova",
+     "provincia": "Valencia",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10225",
+     "fecha": "2026-12-17",
+     "nombre": "Torneo LPG",
+     "club": "El Bosque",
+     "provincia": "Valencia",
+     "tipo": "Club"
+    }
+   ],
+   "cambios": [
+    {
+     "id": "tornegolf-9994",
+     "fecha": "2026-12-12",
+     "nombre": "Torneo Navidad",
+     "club": "Real Montealegre",
+     "provincia": "Valencia",
+     "tipo": "Club",
+     "cambio": "Inscripción abierta"
+    }
+   ],
+   "eliminados": []
+  },
+  {
    "fecha": "2026-11-20",
    "nuevos": [
     {

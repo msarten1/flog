@@ -53,6 +53,12 @@
   "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford, sin indicación de ser competición interna o restringida.",
   "modelo": "gpt-4.1-mini"
  },
+ "tornegolf-10204": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club en Oliva Nova, apto para cualquier jugador con licencia, modalidad individual stableford.",
+  "modelo": "gpt-4.1-mini"
+ },
  "tornegolf-9064": {
   "incluir": true,
   "tipo": "Club",

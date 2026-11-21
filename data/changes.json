@@ -1,42 +1,60 @@
 {
- "fecha": "2026-11-20",
+ "fecha": "2026-11-21",
  "nuevos": [
   {
-   "id": "tornegolf-10175",
-   "fecha": "2026-11-20",
-   "nombre": "Wilkinson Yellow Plate 20/11",
-   "club": "Font del Llop",
+   "id": "tornegolf-10199",
+   "fecha": "2026-11-21",
+   "nombre": "XXXIV Edición Circuito \"CLUB de GOLF VALLE de las UVAS\"",
+   "club": "La Marquesa",
+   "provincia": "Alicante",
+   "tipo": "Circuito"
+  },
+  {
+   "id": "tornegolf-10203",
+   "fecha": "2026-11-21",
+   "nombre": "Torneo Iniciate",
+   "club": "El Plantío",
    "provincia": "Alicante",
    "tipo": "Club"
-  }
- ],
- "cambios": [],
- "eliminados": [],
- "proximos_14_dias": [
+  },
   {
-   "id": "msc-cruceros-manises",
-   "fecha": "2026-11-20",
-   "nombre": "Torneo Golf y Viajes MSC Cruceros",
-   "club": "RCG Manises",
+   "id": "tornegolf-10205",
+   "fecha": "2026-11-22",
+   "nombre": "Torneo Mizuno-Carser 2026",
+   "club": "La Sella Golf",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10204",
+   "fecha": "2026-11-22",
+   "nombre": "Kikuninus",
+   "club": "Oliva Nova",
    "provincia": "Valencia",
    "tipo": "Club"
   },
   {
-   "id": "tornegolf-10089",
-   "fecha": "2026-11-20",
-   "nombre": "Las Colinas Spain -day 2",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
+   "id": "tornegolf-10225",
+   "fecha": "2026-12-17",
+   "nombre": "Torneo LPG",
+   "club": "El Bosque",
+   "provincia": "Valencia",
    "tipo": "Club"
-  },
+  }
+ ],
+ "cambios": [
   {
-   "id": "tornegolf-10175",
-   "fecha": "2026-11-20",
-   "nombre": "Wilkinson Yellow Plate 20/11",
-   "club": "Font del Llop",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
+   "id": "tornegolf-9994",
+   "fecha": "2026-12-12",
+   "nombre": "Torneo Navidad",
+   "club": "Real Montealegre",
+   "provincia": "Valencia",
+   "tipo": "Club",
+   "cambio": "Inscripción abierta"
+  }
+ ],
+ "eliminados": [],
+ "proximos_14_dias": [
   {
    "id": "fgcv-copa-levante-final",
    "fecha": "2026-11-21",
@@ -50,6 +68,22 @@
    "fecha": "2026-11-21",
    "nombre": "V Torneo de Golf Mutxamel",
    "club": "Bonalba",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10199",
+   "fecha": "2026-11-21",
+   "nombre": "XXXIV Edición Circuito \"CLUB de GOLF VALLE de las UVAS\"",
+   "club": "La Marquesa",
+   "provincia": "Alicante",
+   "tipo": "Circuito"
+  },
+  {
+   "id": "tornegolf-10203",
+   "fecha": "2026-11-21",
+   "nombre": "Torneo Iniciate",
+   "club": "El Plantío",
    "provincia": "Alicante",
    "tipo": "Club"
   },
@@ -84,6 +118,22 @@
    "club": "Meliá Villaitana Golf",
    "provincia": "Alicante",
    "tipo": "Circuito"
+  },
+  {
+   "id": "tornegolf-10205",
+   "fecha": "2026-11-22",
+   "nombre": "Torneo Mizuno-Carser 2026",
+   "club": "La Sella Golf",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10204",
+   "fecha": "2026-11-22",
+   "nombre": "Kikuninus",
+   "club": "Oliva Nova",
+   "provincia": "Valencia",
+   "tipo": "Club"
   },
   {
    "id": "fgcv-cto-absoluto-cv",
@@ -180,6 +230,38 @@
    "club": "Meliá Villaitana Golf",
    "provincia": "Alicante",
    "tipo": "Federación"
+  },
+  {
+   "id": "lasella-benefico-ligas",
+   "fecha": "2026-12-05",
+   "nombre": "Torneo Benéfico Fundación Ligas Golf",
+   "club": "La Sella Golf",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "lascolinas-trophy-v",
+   "fecha": "2026-12-05",
+   "nombre": "Las Colinas Trophy",
+   "club": "Las Colinas Golf & Country Club",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10124",
+   "fecha": "2026-12-05",
+   "nombre": "17º Torneo Solidario de Navidad Rotary Club",
+   "club": "La Marquesa",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9728",
+   "fecha": "2026-12-05",
+   "nombre": "Torneo OM Individual",
+   "club": "Panorámica Golf",
+   "provincia": "Castellón",
+   "tipo": "Club"
   }
  ],
  "inscripciones_cierran": [

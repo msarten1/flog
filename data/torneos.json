@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20",
+ "actualizado": "2026-11-21",
  "primera": "2026-11-08",
  "nota": "Torneos amateur de la Comunitat Valenciana (Alicante, Valencia, Castellón). Se excluyen competiciones profesionales, juveniles y las ligas internas de sociedades/socios.",
  "fuentes": [
@@ -71,34 +71,6 @@
    "anadido": "2026-11-08"
   },
   {
-   "id": "tornegolf-10089",
-   "fecha": "2026-11-20",
-   "nombre": "Las Colinas Spain -day 2",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-20-noviembre-2026-las-colinas-spain-day-2-las-colinas-golf-country-club--10089",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afb66eb5445bc10293787b0/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-17"
-  },
-  {
-   "id": "tornegolf-10175",
-   "fecha": "2026-11-20",
-   "nombre": "Wilkinson Yellow Plate 20/11",
-   "club": "Font del Llop",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-20-noviembre-2026-wilkinson-yellow-plate-2011-font-del-llop--10175",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afee63e53aeeeb7e5ce75b6/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-20"
-  },
-  {
    "id": "msc-cruceros-manises",
    "fecha": "2026-11-20",
    "fecha_fin": "2026-11-21",
@@ -157,6 +129,20 @@
    "anadido": "2026-11-17"
   },
   {
+   "id": "tornegolf-10203",
+   "fecha": "2026-11-21",
+   "nombre": "Torneo Iniciate",
+   "club": "El Plantío",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-21-noviembre-2026-torneo-iniciate-el-plantio-pares-3--10203",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b002da99ff2c182e5cd6797/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-21"
+  },
+  {
    "id": "bonalba-mutxamel-v",
    "fecha": "2026-11-21",
    "nombre": "V Torneo de Golf Mutxamel",
@@ -169,6 +155,20 @@
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6ac9e9eb7268198aae0c3f62/summary",
    "fuente": "tornegolf",
    "anadido": "2026-11-08"
+  },
+  {
+   "id": "tornegolf-10199",
+   "fecha": "2026-11-21",
+   "nombre": "XXXIV Edición Circuito \"CLUB de GOLF VALLE de las UVAS\"",
+   "club": "La Marquesa",
+   "provincia": "Alicante",
+   "tipo": "Circuito",
+   "modalidad": "Individual Stroke Play",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-21-noviembre-2026-xxxiv-edicion-circuito-club-d-la-marquesa--10199",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b0032565b8514d75abb46d4/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-21"
   },
   {
    "id": "elbosque-audi-center",
@@ -197,6 +197,34 @@
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6af457b197842d5df4e8a54f/summary",
    "fuente": "tornegolf",
    "anadido": "2026-11-16"
+  },
+  {
+   "id": "tornegolf-10205",
+   "fecha": "2026-11-22",
+   "nombre": "Torneo Mizuno-Carser 2026",
+   "club": "La Sella Golf",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-22-noviembre-2026-torneo-mizuno-carser-2026-campo-la-sella-gregalmestral--10205",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afed4c9fb9c521b04339b02/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-21"
+  },
+  {
+   "id": "tornegolf-10204",
+   "fecha": "2026-11-22",
+   "nombre": "Kikuninus",
+   "club": "Oliva Nova",
+   "provincia": "Valencia",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-22-noviembre-2026-kikuninus-oliva-nova-oliva-nova--10204",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b004de35b8514d75aeda8ec/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-21"
   },
   {
    "id": "fgcv-cto-absoluto-cv",
@@ -597,11 +625,12 @@
    "provincia": "Valencia",
    "tipo": "Club",
    "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
+   "estado_inscripcion": "abierta",
    "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-12-diciembre-2026-torneo-navidad-real-montealegre-montealegre--9994",
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6afc37c4669bd90e39022a72/summary",
    "fuente": "tornegolf",
-   "anadido": "2026-11-18"
+   "anadido": "2026-11-18",
+   "cambio": "Inscripción abierta"
   },
   {
    "id": "tornegolf-10009",
@@ -669,6 +698,20 @@
    "enlace_inscripcion": "https://radargolf.es/event/final-circuito-locos-por-el-golf-en-el-bosque-golf-valencia/",
    "fuente": "tornegolf",
    "anadido": "2026-11-08"
+  },
+  {
+   "id": "tornegolf-10225",
+   "fecha": "2026-12-17",
+   "nombre": "Torneo LPG",
+   "club": "El Bosque",
+   "provincia": "Valencia",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "abierta",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-17-diciembre-2026-torneo-lpg-el-bosque-el-bosque--10225",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/693ad9047b4c3868a273abcd/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-21"
   },
   {
    "id": "fgcv-gala-proam",
