@@ -1,6 +1,53 @@
 {
  "dias": [
   {
+   "fecha": "2026-11-22",
+   "nuevos": [
+    {
+     "id": "tornegolf-10258",
+     "fecha": "2026-12-19",
+     "nombre": "Torneo Navidad en Parejas",
+     "club": "El Plantío",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10272",
+     "fecha": "2026-12-19",
+     "nombre": "XVII Torneo Navidad Font del Llop 2026",
+     "club": "Font del Llop",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10271",
+     "fecha": "2026-12-19",
+     "nombre": "Torneo Memorial Alfonso Pinto",
+     "club": "El Bosque",
+     "provincia": "Valencia",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10260",
+     "fecha": "2026-12-19",
+     "nombre": "Torneo OM Parejas",
+     "club": "Panorámica Golf",
+     "provincia": "Castellón",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10284",
+     "fecha": "2026-12-20",
+     "nombre": "Pro-am Felices Fiestas 2026",
+     "club": "RCG Manises",
+     "provincia": "Valencia",
+     "tipo": "Club"
+    }
+   ],
+   "cambios": [],
+   "eliminados": []
+  },
+  {
    "fecha": "2026-11-21",
    "nuevos": [
     {

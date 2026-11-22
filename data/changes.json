@@ -1,116 +1,50 @@
 {
- "fecha": "2026-11-21",
+ "fecha": "2026-11-22",
  "nuevos": [
   {
-   "id": "tornegolf-10199",
-   "fecha": "2026-11-21",
-   "nombre": "XXXIV Edición Circuito \"CLUB de GOLF VALLE de las UVAS\"",
-   "club": "La Marquesa",
-   "provincia": "Alicante",
-   "tipo": "Circuito"
-  },
-  {
-   "id": "tornegolf-10203",
-   "fecha": "2026-11-21",
-   "nombre": "Torneo Iniciate",
+   "id": "tornegolf-10258",
+   "fecha": "2026-12-19",
+   "nombre": "Torneo Navidad en Parejas",
    "club": "El Plantío",
    "provincia": "Alicante",
    "tipo": "Club"
   },
   {
-   "id": "tornegolf-10205",
-   "fecha": "2026-11-22",
-   "nombre": "Torneo Mizuno-Carser 2026",
-   "club": "La Sella Golf",
+   "id": "tornegolf-10272",
+   "fecha": "2026-12-19",
+   "nombre": "XVII Torneo Navidad Font del Llop 2026",
+   "club": "Font del Llop",
    "provincia": "Alicante",
    "tipo": "Club"
   },
   {
-   "id": "tornegolf-10204",
-   "fecha": "2026-11-22",
-   "nombre": "Kikuninus",
-   "club": "Oliva Nova",
+   "id": "tornegolf-10271",
+   "fecha": "2026-12-19",
+   "nombre": "Torneo Memorial Alfonso Pinto",
+   "club": "El Bosque",
    "provincia": "Valencia",
    "tipo": "Club"
   },
   {
-   "id": "tornegolf-10225",
-   "fecha": "2026-12-17",
-   "nombre": "Torneo LPG",
-   "club": "El Bosque",
+   "id": "tornegolf-10260",
+   "fecha": "2026-12-19",
+   "nombre": "Torneo OM Parejas",
+   "club": "Panorámica Golf",
+   "provincia": "Castellón",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10284",
+   "fecha": "2026-12-20",
+   "nombre": "Pro-am Felices Fiestas 2026",
+   "club": "RCG Manises",
    "provincia": "Valencia",
    "tipo": "Club"
   }
  ],
- "cambios": [
-  {
-   "id": "tornegolf-9994",
-   "fecha": "2026-12-12",
-   "nombre": "Torneo Navidad",
-   "club": "Real Montealegre",
-   "provincia": "Valencia",
-   "tipo": "Club",
-   "cambio": "Inscripción abierta"
-  }
- ],
+ "cambios": [],
  "eliminados": [],
  "proximos_14_dias": [
-  {
-   "id": "fgcv-copa-levante-final",
-   "fecha": "2026-11-21",
-   "nombre": "Copa Levante - Memorial Fco. Gil (final)",
-   "club": "Meliá Villaitana Golf",
-   "provincia": "Alicante",
-   "tipo": "Federación"
-  },
-  {
-   "id": "bonalba-mutxamel-v",
-   "fecha": "2026-11-21",
-   "nombre": "V Torneo de Golf Mutxamel",
-   "club": "Bonalba",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10199",
-   "fecha": "2026-11-21",
-   "nombre": "XXXIV Edición Circuito \"CLUB de GOLF VALLE de las UVAS\"",
-   "club": "La Marquesa",
-   "provincia": "Alicante",
-   "tipo": "Circuito"
-  },
-  {
-   "id": "tornegolf-10203",
-   "fecha": "2026-11-21",
-   "nombre": "Torneo Iniciate",
-   "club": "El Plantío",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "ege-otono-ii",
-   "fecha": "2026-11-21",
-   "nombre": "II Torneo de Otoño EGE",
-   "club": "Escuela de Golf de Elche",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "elbosque-audi-center",
-   "fecha": "2026-11-21",
-   "nombre": "Torneo Audi Center Valencia",
-   "club": "El Bosque",
-   "provincia": "Valencia",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10092",
-   "fecha": "2026-11-21",
-   "nombre": "Las Colinas Spain -day 3",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
   {
    "id": "tornegolf-9869",
    "fecha": "2026-11-22",
@@ -262,6 +196,46 @@
    "club": "Panorámica Golf",
    "provincia": "Castellón",
    "tipo": "Club"
+  },
+  {
+   "id": "villamartin-christmas-scramble",
+   "fecha": "2026-12-06",
+   "nombre": "Christmas Scramble",
+   "club": "Villamartín",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-9740",
+   "fecha": "2026-12-06",
+   "nombre": "Las Colinas Trophy - V Edición",
+   "club": "Las Colinas Golf & Country Club",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "vistabella-navidad",
+   "fecha": "2026-12-06",
+   "nombre": "Torneo Navidad Vistabella Golf",
+   "club": "Vistabella Golf",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "alicantegolf-fuera-limites",
+   "fecha": "2026-12-06",
+   "nombre": "Circuito Fuera de Límites Polo Swing",
+   "club": "Alicante Golf",
+   "provincia": "Alicante",
+   "tipo": "Circuito"
+  },
+  {
+   "id": "fgcv-cto-5cat-masc",
+   "fecha": "2026-12-06",
+   "nombre": "Cto 5ª Cat Masculino",
+   "club": "El Saler",
+   "provincia": "Valencia",
+   "tipo": "Federación"
   }
  ],
  "inscripciones_cierran": [

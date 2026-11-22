@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-21",
+ "actualizado": "2026-11-22",
  "primera": "2026-11-08",
  "nota": "Torneos amateur de la Comunitat Valenciana (Alicante, Valencia, Castellón). Se excluyen competiciones profesionales, juveniles y las ligas internas de sociedades/socios.",
  "fuentes": [
@@ -71,21 +71,6 @@
    "anadido": "2026-11-08"
   },
   {
-   "id": "msc-cruceros-manises",
-   "fecha": "2026-11-20",
-   "fecha_fin": "2026-11-21",
-   "nombre": "Torneo Golf y Viajes MSC Cruceros",
-   "club": "RCG Manises",
-   "provincia": "Valencia",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "abierta",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-21-noviembre-2026-torneo-golf-y-viajes-msc-cruce-rcg-manises-aa--9086",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6aaa6b58edb6caeda7e4a2c7/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-08"
-  },
-  {
    "id": "fgcv-copa-levante-final",
    "fecha": "2026-11-21",
    "nombre": "Copa Levante - Memorial Fco. Gil (final)",
@@ -96,92 +81,7 @@
    "inscripcion": "Inscripción del 6 oct al 16 nov",
    "estado_inscripcion": "cerrada",
    "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2718",
-   "enlace_inscripcion": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2718",
    "fuente": "golfcv",
-   "anadido": "2026-11-08"
-  },
-  {
-   "id": "ege-otono-ii",
-   "fecha": "2026-11-21",
-   "nombre": "II Torneo de Otoño EGE",
-   "club": "Escuela de Golf de Elche",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Fourball Stableford",
-   "estado_inscripcion": "abierta",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-21-noviembre-2026-ii-torneo-de-otono-ege-escuela-elche-el-misteri--9599",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6adf7da805d0e598f32da3d7/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-08"
-  },
-  {
-   "id": "tornegolf-10092",
-   "fecha": "2026-11-21",
-   "nombre": "Las Colinas Spain -day 3",
-   "club": "Las Colinas Golf & Country Club",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-21-noviembre-2026-las-colinas-spain-day-3-las-colinas-golf-country-club--10092",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afb67995445bc102946e817/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-17"
-  },
-  {
-   "id": "tornegolf-10203",
-   "fecha": "2026-11-21",
-   "nombre": "Torneo Iniciate",
-   "club": "El Plantío",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-21-noviembre-2026-torneo-iniciate-el-plantio-pares-3--10203",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b002da99ff2c182e5cd6797/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-21"
-  },
-  {
-   "id": "bonalba-mutxamel-v",
-   "fecha": "2026-11-21",
-   "nombre": "V Torneo de Golf Mutxamel",
-   "club": "Bonalba",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "abierta",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-21-noviembre-2026-v-torneo-de-golf-mutxamel-bonalba--9094",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6ac9e9eb7268198aae0c3f62/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-08"
-  },
-  {
-   "id": "tornegolf-10199",
-   "fecha": "2026-11-21",
-   "nombre": "XXXIV Edición Circuito \"CLUB de GOLF VALLE de las UVAS\"",
-   "club": "La Marquesa",
-   "provincia": "Alicante",
-   "tipo": "Circuito",
-   "modalidad": "Individual Stroke Play",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-21-noviembre-2026-xxxiv-edicion-circuito-club-d-la-marquesa--10199",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b0032565b8514d75abb46d4/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-21"
-  },
-  {
-   "id": "elbosque-audi-center",
-   "fecha": "2026-11-21",
-   "nombre": "Torneo Audi Center Valencia",
-   "club": "El Bosque",
-   "provincia": "Valencia",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "abierta",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-21-noviembre-2026-torneo-audi-center-valencia-el-bosque-el-bosque--9088",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6ab4bcd71ddaf3a38eb89493/summary",
-   "fuente": "tornegolf",
    "anadido": "2026-11-08"
   },
   {
@@ -629,8 +529,7 @@
    "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-12-diciembre-2026-torneo-navidad-real-montealegre-montealegre--9994",
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6afc37c4669bd90e39022a72/summary",
    "fuente": "tornegolf",
-   "anadido": "2026-11-18",
-   "cambio": "Inscripción abierta"
+   "anadido": "2026-11-18"
   },
   {
    "id": "tornegolf-10009",
@@ -727,6 +626,20 @@
    "anadido": "2026-11-08"
   },
   {
+   "id": "tornegolf-10258",
+   "fecha": "2026-12-19",
+   "nombre": "Torneo Navidad en Parejas",
+   "club": "El Plantío",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Scramble Stableford",
+   "estado_inscripcion": "abierta",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-19-diciembre-2026-torneo-navidad-en-parejas-el-plantio-el-plantio--10258",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afefe06fa1568a5cd9d153a/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-22"
+  },
+  {
    "id": "lasella-navidad",
    "fecha": "2026-12-19",
    "nombre": "Torneo de Navidad La Sella",
@@ -738,6 +651,48 @@
    "enlace": "https://lasellagolf.com/en/competiciones/torneo-de-navidad-2026",
    "fuente": "legacy",
    "anadido": "2026-11-08"
+  },
+  {
+   "id": "tornegolf-10272",
+   "fecha": "2026-12-19",
+   "nombre": "XVII Torneo Navidad Font del Llop 2026",
+   "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Scramble Stableford",
+   "estado_inscripcion": "abierta",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-19-diciembre-2026-xvii-torneo-navidad-font-del-l-font-del-llop--10272",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6ae6fc4f8f4f6415e0ac88d9/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-22"
+  },
+  {
+   "id": "tornegolf-10260",
+   "fecha": "2026-12-19",
+   "nombre": "Torneo OM Parejas",
+   "club": "Panorámica Golf",
+   "provincia": "Castellón",
+   "tipo": "Club",
+   "modalidad": "Fourball Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-castellon-19-diciembre-2026-torneo-om-parejas-panoramica-panoramica-club--10260",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6aa97914d2cbd360caa9d6a0/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-22"
+  },
+  {
+   "id": "tornegolf-10271",
+   "fecha": "2026-12-19",
+   "nombre": "Torneo Memorial Alfonso Pinto",
+   "club": "El Bosque",
+   "provincia": "Valencia",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-19-diciembre-2026-torneo-memorial-alfonso-pinto-el-bosque-el-bosque--10271",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/69737c36d8ad1b97c8e681a3/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-22"
   },
   {
    "id": "mediterraneo-20261220-torneo-navidad",
@@ -765,6 +720,20 @@
    "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2706",
    "fuente": "golfcv",
    "anadido": "2026-11-16"
+  },
+  {
+   "id": "tornegolf-10284",
+   "fecha": "2026-12-20",
+   "nombre": "Pro-am Felices Fiestas 2026",
+   "club": "RCG Manises",
+   "provincia": "Valencia",
+   "tipo": "Club",
+   "modalidad": "Scramble Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-20-diciembre-2026-pro-am-felices-fiestas-2026-rcg-manises-aa--10284",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6974dad4920bf1ea8d71ac10/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-22"
   },
   {
    "id": "lascolinas-fin-ano",
