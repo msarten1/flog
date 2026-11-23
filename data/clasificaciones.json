@@ -59,6 +59,18 @@
   "motivo": "Torneo abierto de club en Oliva Nova, apto para cualquier jugador con licencia, modalidad individual stableford.",
   "modelo": "gpt-4.1-mini"
  },
+ "tornegolf-10300": {
+  "incluir": false,
+  "tipo": "Club",
+  "motivo": "Competición interna de club para damas, no es torneo abierto ni circuito federativo.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-10304": {
+  "incluir": false,
+  "tipo": "Club",
+  "motivo": "Orden de mérito interno de club, competición semanal o interna, no abierta a todos los jugadores.",
+  "modelo": "gpt-4.1-mini"
+ },
  "tornegolf-9064": {
   "incluir": true,
   "tipo": "Club",

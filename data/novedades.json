@@ -1,6 +1,29 @@
 {
  "dias": [
   {
+   "fecha": "2026-11-23",
+   "nuevos": [
+    {
+     "id": "golfcv-2778",
+     "fecha": "2026-11-27",
+     "nombre": "Jugadores No LV Cto Absoluto de la CV",
+     "club": "Font del Llop",
+     "provincia": "Alicante",
+     "tipo": "Federación"
+    },
+    {
+     "id": "tornegolf-10347",
+     "fecha": "2026-12-27",
+     "nombre": "XV Torneo Pav@ y Uva Embolsada Vinalopo",
+     "club": "Font del Llop",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    }
+   ],
+   "cambios": [],
+   "eliminados": []
+  },
+  {
    "fecha": "2026-11-22",
    "nuevos": [
     {

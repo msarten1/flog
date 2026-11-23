@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22",
+ "actualizado": "2026-11-23",
  "primera": "2026-11-08",
  "nota": "Torneos amateur de la Comunitat Valenciana (Alicante, Valencia, Castellón). Se excluyen competiciones profesionales, juveniles y las ligas internas de sociedades/socios.",
  "fuentes": [
@@ -85,52 +85,24 @@
    "anadido": "2026-11-08"
   },
   {
-   "id": "tornegolf-9869",
-   "fecha": "2026-11-22",
-   "nombre": "4º- MAJOR (FUSION 2x1 Circuito BCG y MVGT) PONIENTE (Parejas e Individual)",
-   "club": "Meliá Villaitana Golf",
+   "id": "golfcv-2778",
+   "fecha": "2026-11-27",
+   "nombre": "Jugadores No LV Cto Absoluto de la CV",
+   "club": "Font del Llop",
    "provincia": "Alicante",
-   "tipo": "Circuito",
-   "modalidad": "Copa Canadá Stableford",
+   "tipo": "Federación",
+   "precio": "140 €",
    "estado_inscripcion": "abierta",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-22-noviembre-2026-4-major-fusion-2x1-circuito-villaitana-golf-poniente--9869",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6af457b197842d5df4e8a54f/summary",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-27-noviembre-2026-jugadores-no-lv-cto-absoluto-d-club-de-golf-font-del-llop--9257",
+   "enlace_inscripcion": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2778",
    "fuente": "tornegolf",
-   "anadido": "2026-11-16"
-  },
-  {
-   "id": "tornegolf-10205",
-   "fecha": "2026-11-22",
-   "nombre": "Torneo Mizuno-Carser 2026",
-   "club": "La Sella Golf",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-22-noviembre-2026-torneo-mizuno-carser-2026-campo-la-sella-gregalmestral--10205",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afed4c9fb9c521b04339b02/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-21"
-  },
-  {
-   "id": "tornegolf-10204",
-   "fecha": "2026-11-22",
-   "nombre": "Kikuninus",
-   "club": "Oliva Nova",
-   "provincia": "Valencia",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-22-noviembre-2026-kikuninus-oliva-nova-oliva-nova--10204",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b004de35b8514d75aeda8ec/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-21"
+   "anadido": "2026-11-23"
   },
   {
    "id": "fgcv-cto-absoluto-cv",
    "fecha": "2026-11-27",
    "fecha_fin": "2026-11-29",
-   "nombre": "Cto Absoluto de la CV",
+   "nombre": "XXX Campeonato Absoluto de la Comunitat Valenciana",
    "club": "Font del Llop",
    "provincia": "Alicante",
    "tipo": "Federación",
@@ -734,6 +706,20 @@
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6974dad4920bf1ea8d71ac10/summary",
    "fuente": "tornegolf",
    "anadido": "2026-11-22"
+  },
+  {
+   "id": "tornegolf-10347",
+   "fecha": "2026-12-27",
+   "nombre": "XV Torneo Pav@ y Uva Embolsada Vinalopo",
+   "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Fourball Stableford",
+   "estado_inscripcion": "abierta",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-27-diciembre-2026-xv-torneo-pav-y-uva-embolsada-font-del-llop--10347",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6aea031e2267c6230f30b6ae/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-23"
   },
   {
    "id": "lascolinas-fin-ano",
