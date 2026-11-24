@@ -1,19 +1,27 @@
 {
- "fecha": "2026-11-23",
+ "fecha": "2026-11-24",
  "nuevos": [
   {
-   "id": "golfcv-2778",
-   "fecha": "2026-11-27",
-   "nombre": "Jugadores No LV Cto Absoluto de la CV",
-   "club": "Font del Llop",
+   "id": "tornegolf-10354",
+   "fecha": "2026-11-24",
+   "nombre": "Torneo Grupo Bélgica-España Noviembre'26",
+   "club": "La Sella Golf",
    "provincia": "Alicante",
-   "tipo": "Federación"
+   "tipo": "Club"
   },
   {
-   "id": "tornegolf-10347",
-   "fecha": "2026-12-27",
-   "nombre": "XV Torneo Pav@ y Uva Embolsada Vinalopo",
+   "id": "tornegolf-10356",
+   "fecha": "2026-11-24",
+   "nombre": "Green Jackets 24.11",
    "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10358",
+   "fecha": "2026-11-25",
+   "nombre": "CBGS St Andrew´s Day Stableford",
+   "club": "Bonalba",
    "provincia": "Alicante",
    "tipo": "Club"
   }
@@ -21,6 +29,30 @@
  "cambios": [],
  "eliminados": [],
  "proximos_14_dias": [
+  {
+   "id": "tornegolf-10354",
+   "fecha": "2026-11-24",
+   "nombre": "Torneo Grupo Bélgica-España Noviembre'26",
+   "club": "La Sella Golf",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10356",
+   "fecha": "2026-11-24",
+   "nombre": "Green Jackets 24.11",
+   "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10358",
+   "fecha": "2026-11-25",
+   "nombre": "CBGS St Andrew´s Day Stableford",
+   "club": "Bonalba",
+   "provincia": "Alicante",
+   "tipo": "Club"
+  },
   {
    "id": "fgcv-cto-absoluto-cv",
    "fecha": "2026-11-27",
@@ -196,27 +228,17 @@
    "club": "El Saler",
    "provincia": "Valencia",
    "tipo": "Federación"
+  },
+  {
+   "id": "locos-golf-foressos",
+   "fecha": "2026-12-08",
+   "nombre": "Circuito Locos por el Golf",
+   "club": "Foressos Golf",
+   "provincia": "Valencia",
+   "tipo": "Circuito"
   }
  ],
  "inscripciones_cierran": [
-  {
-   "id": "fgcv-cto-absoluto-cv",
-   "fecha": "2026-11-27",
-   "nombre": "XXX Campeonato Absoluto de la Comunitat Valenciana",
-   "club": "Font del Llop",
-   "provincia": "Alicante",
-   "tipo": "Federación",
-   "cierre": "2026-11-23"
-  },
-  {
-   "id": "fgcv-clubes-sin-campo",
-   "fecha": "2026-11-28",
-   "nombre": "Campeonato Clubes Sin Campo CV",
-   "club": "Meliá Villaitana Golf",
-   "provincia": "Alicante",
-   "tipo": "Federación",
-   "cierre": "2026-11-23"
-  },
   {
    "id": "fgcv-liguilla-senior-vlccs-9",
    "fecha": "2026-12-01",

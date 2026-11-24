@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-23",
+ "actualizado": "2026-11-24",
  "primera": "2026-11-08",
  "nota": "Torneos amateur de la Comunitat Valenciana (Alicante, Valencia, Castellón). Se excluyen competiciones profesionales, juveniles y las ligas internas de sociedades/socios.",
  "fuentes": [
@@ -85,6 +85,48 @@
    "anadido": "2026-11-08"
   },
   {
+   "id": "tornegolf-10356",
+   "fecha": "2026-11-24",
+   "nombre": "Green Jackets 24.11",
+   "club": "Font del Llop",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-24-noviembre-2026-green-jackets-2411-font-del-llop--10356",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b04428ad2ed4f3d1c31b3af/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-24"
+  },
+  {
+   "id": "tornegolf-10354",
+   "fecha": "2026-11-24",
+   "nombre": "Torneo Grupo Bélgica-España Noviembre'26",
+   "club": "La Sella Golf",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-24-noviembre-2026-torneo-grupo-belgica-espana-no-campo-la-sella-llebeiggregal--10354",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b03f179d2ed4f3d1c8cffa5/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-24"
+  },
+  {
+   "id": "tornegolf-10358",
+   "fecha": "2026-11-25",
+   "nombre": "CBGS St Andrew´s Day Stableford",
+   "club": "Bonalba",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-25-noviembre-2026-cbgs-st-andrews-day-stablefor-bonalba--10358",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b04037b9bf25f6176934b41/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-24"
+  },
+  {
    "id": "golfcv-2778",
    "fecha": "2026-11-27",
    "nombre": "Jugadores No LV Cto Absoluto de la CV",
@@ -109,7 +151,7 @@
    "modalidad": "Individual · Stroke Play",
    "inscripcion": "Inscripción del 23 oct al 23 nov",
    "precio": "100 €",
-   "estado_inscripcion": "abierta",
+   "estado_inscripcion": "cerrada",
    "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2719",
    "enlace_inscripcion": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2719",
    "fuente": "golfcv",
@@ -124,7 +166,7 @@
    "tipo": "Federación",
    "modalidad": "Varias modalidades · Stroke Play",
    "inscripcion": "Inscripción del 27 oct al 23 nov",
-   "estado_inscripcion": "abierta",
+   "estado_inscripcion": "cerrada",
    "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2720",
    "enlace_inscripcion": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2720",
    "fuente": "golfcv",
@@ -598,20 +640,6 @@
    "anadido": "2026-11-08"
   },
   {
-   "id": "tornegolf-10258",
-   "fecha": "2026-12-19",
-   "nombre": "Torneo Navidad en Parejas",
-   "club": "El Plantío",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Scramble Stableford",
-   "estado_inscripcion": "abierta",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-19-diciembre-2026-torneo-navidad-en-parejas-el-plantio-el-plantio--10258",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6afefe06fa1568a5cd9d153a/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-22"
-  },
-  {
    "id": "lasella-navidad",
    "fecha": "2026-12-19",
    "nombre": "Torneo de Navidad La Sella",
@@ -623,6 +651,20 @@
    "enlace": "https://lasellagolf.com/en/competiciones/torneo-de-navidad-2026",
    "fuente": "legacy",
    "anadido": "2026-11-08"
+  },
+  {
+   "id": "tornegolf-10258",
+   "fecha": "2026-12-19",
+   "nombre": "Torneo la Gallina - Navidad en Parejas",
+   "club": "El Plantío",
+   "provincia": "Alicante",
+   "tipo": "Club",
+   "modalidad": "Scramble Stableford",
+   "estado_inscripcion": "abierta",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-19-diciembre-2026-torneo-la-gallina-navidad-en-el-plantio-pares-3--10385",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b0448019bf25f6176804d0f/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-22"
   },
   {
    "id": "tornegolf-10272",

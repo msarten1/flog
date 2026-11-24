@@ -71,6 +71,18 @@
   "motivo": "Orden de mérito interno de club, competición semanal o interna, no abierta a todos los jugadores.",
   "modelo": "gpt-4.1-mini"
  },
+ "tornegolf-10356": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford, sin indicación de ser competición interna o juvenil.",
+  "modelo": "gpt-4.1-mini"
+ },
+ "tornegolf-10358": {
+  "incluir": true,
+  "tipo": "Club",
+  "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford con divisiones por hándicap, sin indicación de ser competición interna o juvenil.",
+  "modelo": "gpt-4.1-mini"
+ },
  "tornegolf-9064": {
   "incluir": true,
   "tipo": "Club",

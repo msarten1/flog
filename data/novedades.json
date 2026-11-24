@@ -1,6 +1,37 @@
 {
  "dias": [
   {
+   "fecha": "2026-11-24",
+   "nuevos": [
+    {
+     "id": "tornegolf-10354",
+     "fecha": "2026-11-24",
+     "nombre": "Torneo Grupo Bélgica-España Noviembre'26",
+     "club": "La Sella Golf",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10356",
+     "fecha": "2026-11-24",
+     "nombre": "Green Jackets 24.11",
+     "club": "Font del Llop",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    },
+    {
+     "id": "tornegolf-10358",
+     "fecha": "2026-11-25",
+     "nombre": "CBGS St Andrew´s Day Stableford",
+     "club": "Bonalba",
+     "provincia": "Alicante",
+     "tipo": "Club"
+    }
+   ],
+   "cambios": [],
+   "eliminados": []
+  },
+  {
    "fecha": "2026-11-23",
    "nuevos": [
     {
