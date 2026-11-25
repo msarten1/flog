@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-24",
+ "actualizado": "2026-11-25",
  "primera": "2026-11-08",
  "nota": "Torneos amateur de la Comunitat Valenciana (Alicante, Valencia, Castellón). Se excluyen competiciones profesionales, juveniles y las ligas internas de sociedades/socios.",
  "fuentes": [
@@ -85,34 +85,6 @@
    "anadido": "2026-11-08"
   },
   {
-   "id": "tornegolf-10356",
-   "fecha": "2026-11-24",
-   "nombre": "Green Jackets 24.11",
-   "club": "Font del Llop",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-24-noviembre-2026-green-jackets-2411-font-del-llop--10356",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b04428ad2ed4f3d1c31b3af/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-24"
-  },
-  {
-   "id": "tornegolf-10354",
-   "fecha": "2026-11-24",
-   "nombre": "Torneo Grupo Bélgica-España Noviembre'26",
-   "club": "La Sella Golf",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-24-noviembre-2026-torneo-grupo-belgica-espana-no-campo-la-sella-llebeiggregal--10354",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b03f179d2ed4f3d1c8cffa5/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-24"
-  },
-  {
    "id": "tornegolf-10358",
    "fecha": "2026-11-25",
    "nombre": "CBGS St Andrew´s Day Stableford",
@@ -185,6 +157,20 @@
    "enlace_inscripcion": "https://www.golfdirecto.com/game/6af8435dd4037456f9533ff2/summary",
    "fuente": "tornegolf",
    "anadido": "2026-11-16"
+  },
+  {
+   "id": "tornegolf-10394",
+   "fecha": "2026-11-28",
+   "nombre": "Fuera de Limites Vistabella",
+   "club": "Vistabella Golf",
+   "provincia": "Alicante",
+   "tipo": "Circuito",
+   "modalidad": "Individual Stableford",
+   "estado_inscripcion": "cerrada",
+   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-28-noviembre-2026-fuera-de-limites-vistabella-vistabella-vistabella--10394",
+   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b058217bee0208975d532ea/summary",
+   "fuente": "tornegolf",
+   "anadido": "2026-11-25"
   },
   {
    "id": "lasella-aniversario-xxxvi",
@@ -589,15 +575,19 @@
   {
    "id": "fgcv-final-liguilla-senior",
    "fecha": "2026-12-15",
+   "fecha_fin": "2026-12-16",
    "nombre": "Final Liguilla Masculina Senior 2026",
    "club": "Oliva Nova",
    "provincia": "Valencia",
    "tipo": "Federación",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-valencia-15-diciembre-2026-final-liguilla-masculina-senio-oliva-golf--8751",
+   "modalidad": "Fourball · Match Play",
+   "inscripcion": "Inscripción del 25 nov al 10 dic · Senior",
+   "estado_inscripcion": "abierta",
+   "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2724",
    "enlace_inscripcion": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2724",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-08"
+   "fuente": "golfcv",
+   "anadido": "2026-11-08",
+   "cambio": "Inscripción abierta"
   },
   {
    "id": "locos-golf-final",

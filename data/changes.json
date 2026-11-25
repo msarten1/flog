@@ -1,50 +1,28 @@
 {
- "fecha": "2026-11-24",
+ "fecha": "2026-11-25",
  "nuevos": [
   {
-   "id": "tornegolf-10354",
-   "fecha": "2026-11-24",
-   "nombre": "Torneo Grupo Bélgica-España Noviembre'26",
-   "club": "La Sella Golf",
+   "id": "tornegolf-10394",
+   "fecha": "2026-11-28",
+   "nombre": "Fuera de Limites Vistabella",
+   "club": "Vistabella Golf",
    "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10356",
-   "fecha": "2026-11-24",
-   "nombre": "Green Jackets 24.11",
-   "club": "Font del Llop",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10358",
-   "fecha": "2026-11-25",
-   "nombre": "CBGS St Andrew´s Day Stableford",
-   "club": "Bonalba",
-   "provincia": "Alicante",
-   "tipo": "Club"
+   "tipo": "Circuito"
   }
  ],
- "cambios": [],
+ "cambios": [
+  {
+   "id": "fgcv-final-liguilla-senior",
+   "fecha": "2026-12-15",
+   "nombre": "Final Liguilla Masculina Senior 2026",
+   "club": "Oliva Nova",
+   "provincia": "Valencia",
+   "tipo": "Federación",
+   "cambio": "Inscripción abierta"
+  }
+ ],
  "eliminados": [],
  "proximos_14_dias": [
-  {
-   "id": "tornegolf-10354",
-   "fecha": "2026-11-24",
-   "nombre": "Torneo Grupo Bélgica-España Noviembre'26",
-   "club": "La Sella Golf",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
-  {
-   "id": "tornegolf-10356",
-   "fecha": "2026-11-24",
-   "nombre": "Green Jackets 24.11",
-   "club": "Font del Llop",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
   {
    "id": "tornegolf-10358",
    "fecha": "2026-11-25",
@@ -116,6 +94,14 @@
    "club": "La Marquesa",
    "provincia": "Alicante",
    "tipo": "Club"
+  },
+  {
+   "id": "tornegolf-10394",
+   "fecha": "2026-11-28",
+   "nombre": "Fuera de Limites Vistabella",
+   "club": "Vistabella Golf",
+   "provincia": "Alicante",
+   "tipo": "Circuito"
   },
   {
    "id": "lasella-aniversario-xxxvi",
@@ -234,6 +220,22 @@
    "fecha": "2026-12-08",
    "nombre": "Circuito Locos por el Golf",
    "club": "Foressos Golf",
+   "provincia": "Valencia",
+   "tipo": "Circuito"
+  },
+  {
+   "id": "tornegolf-9777",
+   "fecha": "2026-12-09",
+   "nombre": "Matchplay Interclubes AESGOLF Damas de la C. Valenciana",
+   "club": "Oliva Nova",
+   "provincia": "Valencia",
+   "tipo": "Club"
+  },
+  {
+   "id": "aesgolf-naranja-oro",
+   "fecha": "2026-12-09",
+   "nombre": "Gran Premio Naranja de Oro AESGOLF",
+   "club": "Escorpión",
    "provincia": "Valencia",
    "tipo": "Circuito"
   }

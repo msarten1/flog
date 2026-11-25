@@ -83,6 +83,12 @@
   "motivo": "Torneo abierto de club para jugadores con licencia, modalidad individual stableford con divisiones por hándicap, sin indicación de ser competición interna o juvenil.",
   "modelo": "gpt-4.1-mini"
  },
+ "tornegolf-10394": {
+  "incluir": true,
+  "tipo": "Circuito",
+  "motivo": "Pertenece al circuito amateur 'Fuera de Límites', abierto a jugadores con licencia.",
+  "modelo": "gpt-4.1-mini"
+ },
  "tornegolf-9064": {
   "incluir": true,
   "tipo": "Club",

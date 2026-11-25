@@ -1,6 +1,31 @@
 {
  "dias": [
   {
+   "fecha": "2026-11-25",
+   "nuevos": [
+    {
+     "id": "tornegolf-10394",
+     "fecha": "2026-11-28",
+     "nombre": "Fuera de Limites Vistabella",
+     "club": "Vistabella Golf",
+     "provincia": "Alicante",
+     "tipo": "Circuito"
+    }
+   ],
+   "cambios": [
+    {
+     "id": "fgcv-final-liguilla-senior",
+     "fecha": "2026-12-15",
+     "nombre": "Final Liguilla Masculina Senior 2026",
+     "club": "Oliva Nova",
+     "provincia": "Valencia",
+     "tipo": "Federación",
+     "cambio": "Inscripción abierta"
+    }
+   ],
+   "eliminados": []
+  },
+  {
    "fecha": "2026-11-24",
    "nuevos": [
     {
