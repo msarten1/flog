@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25",
+ "actualizado": "2026-11-26",
  "primera": "2026-11-08",
  "nota": "Torneos amateur de la Comunitat Valenciana (Alicante, Valencia, Castellón). Se excluyen competiciones profesionales, juveniles y las ligas internas de sociedades/socios.",
  "fuentes": [
@@ -83,20 +83,6 @@
    "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2718",
    "fuente": "golfcv",
    "anadido": "2026-11-08"
-  },
-  {
-   "id": "tornegolf-10358",
-   "fecha": "2026-11-25",
-   "nombre": "CBGS St Andrew´s Day Stableford",
-   "club": "Bonalba",
-   "provincia": "Alicante",
-   "tipo": "Club",
-   "modalidad": "Individual Stableford",
-   "estado_inscripcion": "cerrada",
-   "enlace": "https://www.tornegolf.com/torneos/golf-en-alicante-25-noviembre-2026-cbgs-st-andrews-day-stablefor-bonalba--10358",
-   "enlace_inscripcion": "https://www.golfdirecto.com/game/6b04037b9bf25f6176934b41/summary",
-   "fuente": "tornegolf",
-   "anadido": "2026-11-24"
   },
   {
    "id": "golfcv-2778",
@@ -586,8 +572,7 @@
    "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2724",
    "enlace_inscripcion": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2724",
    "fuente": "golfcv",
-   "anadido": "2026-11-08",
-   "cambio": "Inscripción abierta"
+   "anadido": "2026-11-08"
   },
   {
    "id": "locos-golf-final",

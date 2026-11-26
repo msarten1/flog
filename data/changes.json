@@ -1,36 +1,9 @@
 {
- "fecha": "2026-11-25",
- "nuevos": [
-  {
-   "id": "tornegolf-10394",
-   "fecha": "2026-11-28",
-   "nombre": "Fuera de Limites Vistabella",
-   "club": "Vistabella Golf",
-   "provincia": "Alicante",
-   "tipo": "Circuito"
-  }
- ],
- "cambios": [
-  {
-   "id": "fgcv-final-liguilla-senior",
-   "fecha": "2026-12-15",
-   "nombre": "Final Liguilla Masculina Senior 2026",
-   "club": "Oliva Nova",
-   "provincia": "Valencia",
-   "tipo": "Federación",
-   "cambio": "Inscripción abierta"
-  }
- ],
+ "fecha": "2026-11-26",
+ "nuevos": [],
+ "cambios": [],
  "eliminados": [],
  "proximos_14_dias": [
-  {
-   "id": "tornegolf-10358",
-   "fecha": "2026-11-25",
-   "nombre": "CBGS St Andrew´s Day Stableford",
-   "club": "Bonalba",
-   "provincia": "Alicante",
-   "tipo": "Club"
-  },
   {
    "id": "fgcv-cto-absoluto-cv",
    "fecha": "2026-11-27",
