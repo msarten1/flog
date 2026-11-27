@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-26",
+ "fecha": "2026-11-27",
  "nuevos": [],
  "cambios": [],
  "eliminados": [],
@@ -211,27 +211,16 @@
    "club": "Escorpión",
    "provincia": "Valencia",
    "tipo": "Circuito"
-  }
- ],
- "inscripciones_cierran": [
-  {
-   "id": "fgcv-liguilla-senior-vlccs-9",
-   "fecha": "2026-12-01",
-   "nombre": "Liguilla Senior Masculina Zona VLC/CS 1DIV 2DIV 9/9",
-   "club": "El Bosque",
-   "provincia": "Valencia",
-   "tipo": "Federación",
-   "cierre": "2026-11-26"
   },
   {
-   "id": "fgcv-liguilla-interclubs-fem-4",
-   "fecha": "2026-12-02",
-   "nombre": "Rec IV Liguilla Interclubs Femenina 4/9",
-   "club": "Meliá Villaitana Golf",
-   "provincia": "Alicante",
-   "tipo": "Federación",
-   "cierre": "2026-11-26"
+   "id": "mediterraneo-navidad",
+   "fecha": "2026-12-11",
+   "nombre": "Mediterraneo Winter Series WAGR",
+   "club": "Mediterráneo Golf",
+   "provincia": "Castellón",
+   "tipo": "Circuito"
   }
  ],
+ "inscripciones_cierran": [],
  "revisar": []
 }

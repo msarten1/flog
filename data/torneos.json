@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26",
+ "actualizado": "2026-11-27",
  "primera": "2026-11-08",
  "nota": "Torneos amateur de la Comunitat Valenciana (Alicante, Valencia, Castellón). Se excluyen competiciones profesionales, juveniles y las ligas internas de sociedades/socios.",
  "fuentes": [
@@ -263,7 +263,7 @@
    "modalidad": "Fourball · Match Play",
    "inscripcion": "Inscripción del 27 oct al 26 nov · Senior",
    "precio": "40 €",
-   "estado_inscripcion": "abierta",
+   "estado_inscripcion": "cerrada",
    "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2721",
    "enlace_inscripcion": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2721",
    "fuente": "golfcv",
@@ -279,7 +279,7 @@
    "modalidad": "Fourball · Match Play",
    "inscripcion": "Inscripción del 4 nov al 26 nov",
    "precio": "40 €",
-   "estado_inscripcion": "abierta",
+   "estado_inscripcion": "cerrada",
    "enlace": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2776",
    "enlace_inscripcion": "https://golfcv.com/torneo_seek/ver-torneo/?torneoid=2776",
    "fuente": "golfcv",
